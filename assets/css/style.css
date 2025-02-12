@@ -104,3 +104,25 @@ h3 {
     }
 }
 
+/* Navbar responsiveness for 576px and smaller screens */
+@media screen and (max-width: 576px) {
+    #navbar {
+        padding: 10px 15px;
+        height: auto;
+    }
+
+    #navbar ul {
+        gap: 9px;
+    }
+
+    #navbar ul li a {
+        font-size: 8px;
+        padding: 8px 12px;
+    }
+
+    #navbar .logo {
+        width: 50px;
+        margin-bottom: 10px;
+    }
+}
+
