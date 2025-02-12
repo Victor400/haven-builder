@@ -19,9 +19,8 @@
 </head>
 
 <body>
-
     <!-- Navigation -->
-    <nav id="navbar" class="navbar navbar-expand-lg" data-bs-theme="dark">
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
         <div class="container">
             <a class="navbar-brand" href="#index.html">
                 <img src="assets/images/haven-builders-logo.png" alt="Haven Builders logo" class="logo">
@@ -69,6 +68,63 @@
         </div>
     </nav>
 
+    <!--Carousel-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/home-4.jpg" class="d-block w-100"
+                    alt="Sleek and sophisticated modern minimalist house">
+                <div class="carousel-caption">
+                    <h5>Modern Minimalist</h5>
+                    <p>Sleek and sophisticated, this home boasts open-plan living spaces filled with natural light.
+                        Clean lines, high ceilings, and a neutral colour palette create a sense of calm and order. A
+                        statement kitchen with top-of-the-line appliances and a chic marble island is the focal point.
+                    </p>
+                    <p><a href="#" class="btn btn-warning mt-3">Learn More</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/home-6.jpg" class="d-block w-100"
+                    alt="Contemporary eco home with sustainability">
+                <div class="carousel-caption">
+                    <h5>Victorian Terrace</h5>
+                    <p>Designed with sustainability in mind, this home incorporates solar panels, a green roof, and
+                        reclaimed materials throughout. The open-plan living space features large windows that flood the
+                        home with light, and a neutral colour palette that blends effortlessly with the natural.
+                    </p>
+                    <p><a href="#" class="btn btn-warning mt-3">Learn More</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/home-5.jpg" class="d-block w-100" alt="Sunset ridge on the hill">
+                <div class="carousel-caption">
+                    <h5>Sunset Ridge</h5>
+                    <p>Perched on a hill that offers panoramic views of the horizon, this house is the perfect spot to
+                        watch the sun dip below the earth. Its expansive decks and open design welcome the outdoors
+                        inside.</p>
+                        <p><a href="#" class="btn btn-warning mt-3">Learn More</a></p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
