@@ -85,13 +85,18 @@ h3 {
 }
 
 
+
+
+
+
+
 /* Navbar responsiveness for 768px and smaller screens */
 @media screen and (max-width: 768px) {
     #navbar {
         flex-direction: column;
         align-items: center;
         height: auto;
-       
+    
     }
 
     #navbar ul li a {
