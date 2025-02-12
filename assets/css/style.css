@@ -101,45 +101,34 @@ h3 {
     transition: background-color 0.3s ease;
 }
 
-.nav-item .dropdown-toggle:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
 /* Dropdown Menu */
 .nav-item .dropdown-menu {
-    display: none;
-    /* Hide dropdown initially */
+    display: none; /* Initially hide the dropdown */
     position: absolute;
     top: 100%;
-    /* Position below the menu item */
     left: 0;
     background-color: var(--primary-color);
     border-radius: 5px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-    min-width: 160px;
+    width: auto; /* Dropdown width based on the content */
     opacity: 0;
-    /* Set opacity to 0 for transition effect */
     pointer-events: none;
-    /* Prevent interactions when hidden */
     transition: opacity 0.3s ease;
-    /* Smooth transition */
+    padding: 5px 0; /* Adjust padding for a shorter height */
 }
 
-/* Show the dropdown on hover */
+/* Show the dropdown on hover (desktop and tablet view) */
 .nav-item:hover .dropdown-menu {
     display: block;
-    /* Show dropdown on hover */
     opacity: 1;
-    /* Fade in */
     pointer-events: auto;
-    /* Enable interaction with the menu */
 }
 
 /* Dropdown Item Styles */
 .dropdown-item {
     color: white;
     font-size: 14px;
-    padding: 10px 15px;
+    padding: 8px 15px; /* Adjust padding to make items more compact */
     text-decoration: none;
     display: block;
     transition: background-color 0.3s ease;
@@ -148,7 +137,6 @@ h3 {
 .dropdown-item:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
-
 
 /* Navbar responsiveness for 768px and smaller screens */
 @media screen and (max-width: 768px) {
@@ -160,7 +148,7 @@ h3 {
     }
 
     #navbar ul li a {
-        font-size: 10px;
+        font-size: 13px;
         padding: 8px 12px;
     }
 
@@ -186,7 +174,7 @@ h3 {
     }
 
     #navbar ul li a {
-        font-size: 8px;
+        font-size: 11px;
         padding: 8px 12px;
     }
 
