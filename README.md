@@ -1,4 +1,5 @@
-![image-alt](/Users/victor/haven-builder/assets/images/haven-builders-logo.png)
+![haven-builders-logo](assets/images/haven-builders-logo.png)
+
 # Haven Builders Website
 Welcome to Haven Builders, your trusted partner in creating dream homes. We specialise in personalised, sustainable, and high-quality home-building solutions to bring your vision to life. Explore our services and let us help you design the home you've always wanted.
 
