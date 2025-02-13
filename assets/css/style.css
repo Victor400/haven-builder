@@ -103,18 +103,21 @@ h3 {
 
 /* Dropdown Menu */
 .nav-item .dropdown-menu {
-    display: none; /* Initially hide the dropdown */
+    display: none;
+    /* Initially hide the dropdown */
     position: absolute;
     top: 100%;
     left: 0;
     background-color: var(--primary-color);
     border-radius: 5px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-    width: auto; /* Dropdown width based on the content */
+    width: auto;
+    /* Dropdown width based on the content */
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
-    padding: 5px 0; /* Adjust padding for a shorter height */
+    padding: 5px 0;
+    /* Adjust padding for a shorter height */
 }
 
 /* Show the dropdown on hover (desktop and tablet view) */
@@ -128,7 +131,8 @@ h3 {
 .dropdown-item {
     color: white;
     font-size: 14px;
-    padding: 8px 15px; /* Adjust padding to make items more compact */
+    padding: 8px 15px;
+    /* Adjust padding to make items more compact */
     text-decoration: none;
     display: block;
     transition: background-color 0.3s ease;
@@ -136,6 +140,178 @@ h3 {
 
 .dropdown-item:hover {
     background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Carousel Styles */
+#carouselExampleCaptions {
+    position: relative;
+    background-color: #000;
+    /* Adds a dark background to the carousel */
+    border-radius: 10px;
+    /* Rounded corners for a softer feel */
+    overflow: hidden;
+    /* Ensures no overflow of images */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    /* Soft shadow for depth */
+}
+
+/* Carousel Image Styles */
+.carousel-inner .carousel-item img {
+    object-fit: cover;
+    /* Ensures images cover the entire carousel item */
+    height: 600px;
+    /* Fixed height to maintain a consistent size for carousel */
+    transition: transform 0.5s ease-in-out;
+    /* Smooth transition for image zoom effect */
+}
+
+.carousel-inner .carousel-item img:hover {
+    transform: scale(1.1);
+    /* Slight zoom effect on hover */
+}
+
+/* Carousel Caption Styles */
+.carousel-caption {
+    position: absolute;
+    top: 74%;
+    bottom: auto;
+    left: 415px;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Adds shadow to text for readability */
+    background: rgba(0, 0, 0, 0.4);
+    /* Dark overlay behind text */
+    padding: 3px;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Carousel Caption Title */
+.carousel-caption h5 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+/* Carousel Caption Text */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 9px;
+}
+
+/* Carousel Caption Button */
+.carousel-caption .btn-warning {
+    background-color: #fbb034;
+    border-color: #fbb034;
+    color: white;
+    padding: 10px 25px;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.carousel-caption .btn-warning:hover {
+    background-color: #f7a800;
+    border-color: #f7a800;
+    transform: scale(1.05);
+    /* Slight scaling effect on hover */
+}
+
+/* Carousel Indicators */
+.carousel-indicators button {
+    background-color: #fbb034;
+    /* Indicator color */
+    border: none;
+}
+
+.carousel-indicators .active {
+    background-color: #d18513;
+    /* Active indicator color */
+}
+
+/* Carousel Control Buttons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #fbb034;
+    /* Control button color */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Dark background for control buttons */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+/* Control Button Hover Effect */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Carousel Caption Button */
+.carousel-caption .btn-warning {
+    background-color: #fbb034;
+    border-color: #fbb034;
+    color: white;
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.carousel-caption .btn-warning:hover {
+    background-color: #f7a800;
+    border-color: #f7a800;
+    transform: scale(1.05);
+    /* Slight scaling effect on hover */
+}
+
+/* Navbar responsiveness for 1024px and smaller screens */
+@media screen and (max-width: 1024px) {
+
+    /* Carousel Caption Styles */
+    .carousel-caption {
+        position: absolute;
+        top: 58%;
+        left: 300px;
+        bottom: auto;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        /* Adds shadow to text for readability */
+        background: rgba(0, 0, 0, 0.4);
+        /* Dark overlay behind text */
+        padding: 14px;
+        border-radius: 8px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Carousel Caption Title */
+    .carousel-caption h5 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 12px;
+        letter-spacing: 1px;
+    }
+
+    /* Carousel Caption Text */
+    .carousel-caption p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: -12px;
+    }
 }
 
 /* Navbar responsiveness for 768px and smaller screens */
@@ -160,6 +336,68 @@ h3 {
     #navbar .logo {
         margin-bottom: 15px;
     }
+
+    .carousel-caption {
+        position: absolute;
+        top: 68%;
+        left: 224px;
+        bottom: auto;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        /* Adds shadow to text for readability */
+        background: rgba(0, 0, 0, 0.4);
+        /* Dark overlay behind text */
+        padding: 28px;
+        border-radius: 8px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Carousel Caption Title */
+    .carousel-caption h5 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 12px;
+        letter-spacing: 1px;
+    }
+
+    /* Carousel Caption Text */
+    .carousel-caption p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: -12px;
+    }
+
+    /* Carousel Caption Button */
+    .carousel-caption .btn-warning {
+        background-color: #fbb034;
+        border-color: #fbb034;
+        color: white;
+        padding: 10px 25px;
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+    }
+
+    .carousel-caption .btn-warning:hover {
+        background-color: #f7a800;
+        border-color: #f7a800;
+        transform: scale(1.05);
+        /* Slight scaling effect on hover */
+    }
+
+    /* Carousel Image Styles */
+    .carousel-inner .carousel-item img {
+        object-fit: cover;
+        /* Ensures images cover the entire carousel item */
+        height: 292px;
+        /* Fixed height to maintain a consistent size for carousel */
+        transition: transform 0.5s ease-in-out;
+        /* Smooth transition for image zoom effect */
+    }
 }
 
 /* Navbar responsiveness for 576px and smaller screens */
@@ -182,4 +420,76 @@ h3 {
         width: 50px;
         margin-bottom: 10px;
     }
+
+    .carousel-caption {
+        position: absolute;
+        top: 73%;
+        left: 128px;
+        bottom: auto;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        /* Adds shadow to text for readability */
+        background: rgba(0, 0, 0, 0.4);
+        /* Dark overlay behind text */
+        padding: 7px;
+        border-radius: 8px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Carousel Caption Title */
+    .carousel-caption h5 {
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 4px;
+        letter-spacing: 1px;
+    }
+
+    /* Carousel Caption Text */
+    .carousel-caption p {
+        font-size: 8px;
+        line-height: 1.5;
+        margin-bottom: 4px;
+    }
+
+    /* Carousel Caption Button */
+    .carousel-caption .btn-warning {
+        background-color: #fbb034;
+        border-color: #fbb034;
+        color: white;
+        padding: 10px 25px;
+        font-size: 8px;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+    }
+
+    .carousel-caption .btn-warning:hover {
+        background-color: #f7a800;
+        border-color: #f7a800;
+        transform: scale(1.05);
+        /* Slight scaling effect on hover */
+    }
+
+    /* Carousel Image Styles */
+    .carousel-inner .carousel-item img {
+        object-fit: cover;
+        /* Ensures images cover the entire carousel item */
+        height: 292px;
+        /* Fixed height to maintain a consistent size for carousel */
+        transition: transform 0.5s ease-in-out;
+        /* Smooth transition for image zoom effect */
+    }
+
+    .carousel-inner .carousel-item img:hover {
+        transform: scale(1.1);
+        /* Slight zoom effect on hover */
+    }
+
+    .navbar-toggler-icon {
+        font-size: 20px;
+    }
+
 }
