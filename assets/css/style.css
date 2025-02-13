@@ -29,8 +29,6 @@ h3 {
     color: var(--secondary-colorr);
 }
 
-
-
 /* Navbar */
 #navbar {
     background-color: var(--primary-color);
@@ -87,6 +85,10 @@ h3 {
 #navbar ul li a:hover {
     background-color: rgba(255, 255, 255, 0.2);
     color: #fff;
+}
+
+.w100 {
+    height: 100vh;
 }
 
 
@@ -216,7 +218,6 @@ h3 {
     padding: 10px 25px;
     font-size: 17px;
     font-weight: 600;
-    text-transform: uppercase;
     border-radius: 30px;
     transition: all 0.3s ease;
 }
@@ -270,7 +271,6 @@ h3 {
     padding: 10px 25px;
     font-size: 15px;
     font-weight: 600;
-    text-transform: uppercase;
     border-radius: 30px;
     transition: all 0.3s ease;
 }
@@ -279,22 +279,162 @@ h3 {
     background-color: var(--highlight-color-light);
     border-color: #f7a800;
     transform: scale(1.05);
+}
+
+/* Carousel Caption Button */
+.about-text .btn-warning {
+    background-color: #fbb034;
+    border-color: #fbb034;
+    color: white;
+    padding: 10px 25px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.about-text .btn-warning:hover {
+    background-color: #f7a800;
+    border-color: #f7a800;
+    transform: scale(1.05);
     /* Slight scaling effect on hover */
 }
 
 /* General Styling for the About Section */
 header.container {
-    background-color: var(--highlight-color); 
-    border-radius: 8px; /* Rounded corners for a more modern look */
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Light shadow for depth */
-    padding: 60px 20px; /* Padding for spacing */
+    background-color: var(--highlight-color);
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    /* Light shadow for depth */
+    padding: 60px 20px;
 }
+
 /**css for about*/
 /* About Section Styles */
 .about {
-    padding: 80px 0;
-    background-color: var(--highlight-color); 
+    padding: 20px 0;
+    background-color: var(--highlight-color);
 }
+
+/* Section Header */
+.services {
+    padding-top: 50px;
+    /* Adds internal space at the top */
+}
+
+/* Section Header */
+.services .section-header {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 8px;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centers horizontally */
+    justify-content: center;
+    /* Centers vertically */
+    text-align: center;
+    /* Ensures text is centered inside */
+}
+
+.services .section-header h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.services .section-header p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+/* Cards */
+.services .card {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--primary-color);
+    /* Blue background */
+    display: flex;
+    flex-direction: column;
+    /* Ensure card content stretches vertically */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 250px;
+    /* Fixed height for shorter cards */
+    margin-bottom: 30px;
+    /* Space between rows of cards */
+}
+
+.services .card-body {
+    padding: 20px;
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+.services .card .card-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 0 10px 0;
+}
+
+.services .card .lead {
+    font-size: 16px;
+    color: #e1e1e1;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.services .card i {
+    font-size: 40px;
+    color: #fbb034;
+    margin-bottom: 15px;
+}
+
+/* Hover Effects */
+.services .card:hover {
+    transform: translateY(-10px);
+    /* Lift the card on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    /* Add a subtle shadow */
+}
+
+.services .card:hover i {
+    color: #333;
+    /* Change icon color on hover */
+}
+
+
+
+/* Flexbox Layout for Cards */
+.services .row {
+    display: flex;
+    flex-wrap: wrap;
+    /* Ensure cards wrap on smaller screens */
+    gap: 20px;
+    /* Space between columns */
+    justify-content: space-between;
+}
+
+.services .col-lg-4 {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 31%;
+    /* Make cards take up 1/3 of the width on large screens */
+    flex-grow: 1;
+}
+
 
 /* Navbar responsiveness for 1024px and smaller screens */
 @media screen and (max-width: 1024px) {
@@ -331,6 +471,26 @@ header.container {
         line-height: 1.5;
         margin-bottom: -12px;
     }
+
+    /* Carousel Caption Button */
+    .about-text .btn-warning {
+        background-color: #fbb034;
+        border-color: #fbb034;
+        color: white;
+        padding: 10px 25px;
+        font-size: 17px;
+        font-weight: 600;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+    }
+
+    .about-text .btn-warning:hover {
+        background-color: #f7a800;
+        border-color: #f7a800;
+        transform: scale(1.05);
+        /* Slight scaling effect on hover */
+    }
+
 }
 
 /* Navbar responsiveness for 768px and smaller screens */
@@ -396,7 +556,6 @@ header.container {
         padding: 10px 25px;
         font-size: 10px;
         font-weight: 600;
-        text-transform: uppercase;
         border-radius: 30px;
         transition: all 0.3s ease;
     }
@@ -415,56 +574,59 @@ header.container {
         height: 393px;
         transition: transform 0.5s ease-in-out;
     }
+
     /* About Section Styles */
-.about {
-    padding: 80px 0;
-    background-color: var(--highlight-color); 
-}
+    .about {
+        padding: 80px 0;
+        background-color: var(--highlight-color);
+    }
 
-.section-padding {
-    padding: 7px 0;
-}
-/* About Text Styling */
-.about-text h2 {
-    font-size: 22px;
-    font-weight: 700;
-    color: #333; /* Dark text for better contrast */
-    line-height: 1.4;
-    margin-bottom: 11px;
-    text-align: left;
-}
-/* Subheading for the About section */
-.about-text p {
-    font-size: 14px;
-    color: #343a40; 
-    line-height: 1.6;
-    margin-bottom: 4px;
-}
+    .section-padding {
+        padding: 7px 0;
+    }
 
-/* About us Button */
-.about-text .btn-warning {
-    background-color: #fbb034;
-    border-color: #fbb034;
-    color: white;
-    padding: 10px 25px;
-    font-size: 10px;
-    font-weight: 600;
-    text-transform: uppercase;
-    border-radius: 30px;
-    transition: all 0.3s ease;
-}
+    /* About Text Styling */
+    .about-text h2 {
+        font-size: 22px;
+        font-weight: 700;
+        color: #333;
+        /* Dark text for better contrast */
+        line-height: 1.4;
+        margin-bottom: 11px;
+        text-align: left;
+    }
 
-.about-text .btn-warning:hover {
-    background-color: var(--highlight-color-light);
-    border-color: #f7a800;
-    transform: scale(1.05);
-    /* Slight scaling effect on hover */
-}
+    /* Subheading for the About section */
+    .about-text p {
+        font-size: 14px;
+        color: #343a40;
+        line-height: 1.6;
+        margin-bottom: 4px;
+    }
 
-.about-img .img-fluid {
-    margin-top: 17px !important;
-    margin-bottom: 19px;
-}
+    /* About us Button */
+    .about-text .btn-warning {
+        background-color: #fbb034;
+        border-color: #fbb034;
+        color: white;
+        padding: 10px 25px;
+        font-size: 10px;
+        font-weight: 600;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+    }
+
+    .about-text .btn-warning:hover {
+        background-color: var(--highlight-color-light);
+        border-color: #f7a800;
+        transform: scale(1.05);
+        /* Slight scaling effect on hover */
+    }
+
+    .about-img .img-fluid {
+        margin-top: 17px !important;
+        margin-bottom: 19px;
+    }
 
 }
 
@@ -560,56 +722,59 @@ header.container {
         font-size: 20px;
     }
 
-        /* About Section Styles */
-.about {
-    padding: 80px 0;
-    background-color: var(--highlight-color); 
-}
+    /* About Section Styles */
+    .about {
+        padding: 80px 0;
+        background-color: var(--highlight-color);
+    }
 
-.section-padding {
-    padding: 7px 0;
-}
-/* About Text Styling */
-.about-text h2 {
-    font-size: 18px;
-    font-weight: 700;
-    color: #333; /* Dark text for better contrast */
-    line-height: 1.4;
-    margin-bottom: 11px;
-    text-align: left;
-}
-/* Subheading for the About section */
-.about-text p {
-    font-size: 11px;
-    color: #343a40; 
-    line-height: 1.6;
-    margin-bottom: 4px;
-}
+    .section-padding {
+        padding: 7px 0;
+    }
+
+    /* About Text Styling */
+    .about-text h2 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #333;
+        /* Dark text for better contrast */
+        line-height: 1.4;
+        margin-bottom: 11px;
+        text-align: left;
+    }
+
+    /* Subheading for the About section */
+    .about-text p {
+        font-size: 11px;
+        color: #343a40;
+        line-height: 1.6;
+        margin-bottom: 4px;
+    }
 
 
-/* About us Button */
-.about-text .btn-warning {
-    background-color: #fbb034;
-    border-color: #fbb034;
-    color: white;
-    padding: 10px 25px;
-    font-size: 10px;
-    font-weight: 600;
-    text-transform: uppercase;
-    border-radius: 30px;
-    transition: all 0.3s ease;
-}
+    /* About us Button */
+    .about-text .btn-warning {
+        background-color: #fbb034;
+        border-color: #fbb034;
+        color: white;
+        padding: 10px 25px;
+        font-size: 10px;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+    }
 
-.about-text .btn-warning:hover {
-    background-color: var(--highlight-color-light);
-    border-color: #f7a800;
-    transform: scale(1.05);
-    /* Slight scaling effect on hover */
-}
+    .about-text .btn-warning:hover {
+        background-color: var(--highlight-color-light);
+        border-color: #f7a800;
+        transform: scale(1.05);
+        /* Slight scaling effect on hover */
+    }
 
-.about-img .img-fluid {
-    margin-top: 21px !important;
-    margin-bottom: 11px;
-}
+    .about-img .img-fluid {
+        margin-top: 21px !important;
+        margin-bottom: 11px;
+    }
 
 }
