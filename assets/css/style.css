@@ -316,7 +316,7 @@ header.container {
 }
 
 
-/* Carousel Caption Button */
+/* About us Button */
 .about-text .btn-warning {
     background-color: #fbb034;
     border-color: #fbb034;
@@ -440,7 +440,7 @@ header.container {
         border-color: #fbb034;
         color: white;
         padding: 10px 25px;
-        font-size: 11px;
+        font-size: 10px;
         font-weight: 600;
         text-transform: uppercase;
         border-radius: 30px;
@@ -448,7 +448,7 @@ header.container {
     }
 
     .carousel-caption .btn-warning:hover {
-        background-color: #f7a800;
+        background-color: var(--highlight-color-light);
         border-color: #f7a800;
         transform: scale(1.05);
         /* Slight scaling effect on hover */
@@ -459,10 +459,60 @@ header.container {
         object-fit: cover;
         /* Ensures images cover the entire carousel item */
         height: 393px;
-        /* Fixed height to maintain a consistent size for carousel */
         transition: transform 0.5s ease-in-out;
-        /* Smooth transition for image zoom effect */
     }
+    /* About Section Styles */
+.about {
+    padding: 80px 0;
+    background-color: var(--highlight-color); 
+}
+
+.section-padding {
+    padding: 7px 0;
+}
+/* About Text Styling */
+.about-text h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #333; /* Dark text for better contrast */
+    line-height: 1.4;
+    margin-bottom: 11px;
+    text-align: left;
+}
+/* Subheading for the About section */
+.about-text p {
+    font-size: 14px;
+    color: #343a40; 
+    line-height: 1.6;
+    margin-bottom: 4px;
+}
+
+
+/* About us Button */
+.about-text .btn-warning {
+    background-color: #fbb034;
+    border-color: #fbb034;
+    color: white;
+    padding: 10px 25px;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.about-text .btn-warning:hover {
+    background-color: var(--highlight-color-light);
+    border-color: #f7a800;
+    transform: scale(1.05);
+    /* Slight scaling effect on hover */
+}
+
+.about-img .img-fluid {
+    margin-top: 17px !important;
+    margin-bottom: 19px;
+}
+
 }
 
 /* Navbar responsiveness for 576px and smaller screens */
