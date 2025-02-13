@@ -340,7 +340,7 @@ header.container {
 }
 
 .services .section-header h2 {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 600;
     color: #333;
     margin-bottom: 15px;
@@ -435,6 +435,42 @@ header.container {
     flex-grow: 1;
 }
 
+
+/* Button Styles */
+.services .btn {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.services .btn-primary {
+    background-color: #fbb034;
+    border-color: #fbb034;
+    color: #333;
+}
+
+.services .btn-primary:hover {
+    background-color: #e6952f;
+    border-color: #e6952f;
+    color: #fff;
+}
+
+.services .btn-secondary {
+    background-color: #fbb034;;
+    border-color: #fbb034;
+    color: #333;
+}
+
+.services .btn-secondary:hover {
+    background-color: #e6952f;
+    border-color: #e6952f;
+    color: #fff;
+}
 
 /* Navbar responsiveness for 1024px and smaller screens */
 @media screen and (max-width: 1024px) {
@@ -639,6 +675,13 @@ header.container {
         width: 32%; /* Keep 3 cards side by side */
     }
 
+    .services .card .card-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #fff;
+        margin: 0 0 10px 0;
+    }
+
     .services .section-header {
         margin-bottom: 15px;
     }
@@ -656,6 +699,26 @@ header.container {
     }
     .services .card .lead {
         font-size: 12px; 
+    }
+    .services .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .services .col-lg-4 {
+        width: 32%;
+    }
+
+    .services .btn {
+        width: 77%; /* Make buttons stack on smaller screens */
+        margin-right: 0; 
+       
+    }
+    .services .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
 }
@@ -835,13 +898,20 @@ header.container {
     }
 
     .services .card .card-title {
-        font-size: 18px;
+        font-size: 23px;
         margin-bottom: 5px; /* Closer to the description */
     }
 
     .services .card .lead {
-        font-size: 13px;
-        margin-top: 10px; /* Bring the text closer to the title */
+        font-size: 18px;
+        margin-top: 18px; /* Bring the text closer to the title */
     }
+    .services .btn {
+        width: 56%;
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 8px 20px;
+    }
+
+    
 
 }
