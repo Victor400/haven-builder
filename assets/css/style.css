@@ -628,6 +628,36 @@ header.container {
         margin-bottom: 19px;
     }
 
+    .services .row {
+        display: flex;
+        flex-wrap: wrap; /* Allow the items to wrap in the row */
+        justify-content: space-between; /* Ensure space between the cards */
+        gap: 20px; /* Space between the cards */
+    }
+
+    .services .col-lg-4 {
+        width: 32%; /* Keep 3 cards side by side */
+    }
+
+    .services .section-header {
+        margin-bottom: 15px;
+    }
+
+    .services .section-header h2 {
+        font-size: 24px;
+    }
+
+    .services .section-header p {
+        font-size: 13px;
+    }
+
+    .services .card-body {
+        padding: 15px;
+    }
+    .services .card .lead {
+        font-size: 12px; 
+    }
+
 }
 
 /* Navbar responsiveness for 576px and smaller screens */
@@ -775,6 +805,43 @@ header.container {
     .about-img .img-fluid {
         margin-top: 21px !important;
         margin-bottom: 11px;
+    }
+
+    .services .row {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .services .col-lg-4 {
+        width: 100%; /* Make cards 100% width on mobile */
+    }
+
+    .services .card {
+        margin: 0 auto; /* Center the card on mobile */
+        width: 90%; /* Slightly reduce width for smaller cards */
+    }
+
+    .services .section-header h2 {
+        font-size: 20px;
+    }
+
+    .services .section-header p {
+        font-size: 13px;
+    }
+
+    .services .card-body {
+        padding: 40px;
+    }
+
+    .services .card .card-title {
+        font-size: 18px;
+        margin-bottom: 5px; /* Closer to the description */
+    }
+
+    .services .card .lead {
+        font-size: 13px;
+        margin-top: 10px; /* Bring the text closer to the title */
     }
 
 }
