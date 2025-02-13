@@ -277,6 +277,23 @@ h3 {
     /* Slight scaling effect on hover */
 }
 
+
+
+/*Grid structure*/
+.container .row {
+    border: 2px solid black;
+}
+.col-12 {
+    border: 2px solid white;
+    background-color: lightgray;
+}
+
+
+
+
+
+
+
 /* Navbar responsiveness for 1024px and smaller screens */
 @media screen and (max-width: 1024px) {
 
