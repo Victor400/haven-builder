@@ -283,7 +283,7 @@ h3 {
     /* Carousel Caption Styles */
     .carousel-caption {
         position: absolute;
-        top: 58%;
+        top: 78%;
         left: 300px;
         bottom: auto;
         transform: translate(-50%, -50%);
@@ -364,7 +364,7 @@ h3 {
 
     /* Carousel Caption Text */
     .carousel-caption p {
-        font-size: 14px;
+        font-size: 15px;
         line-height: 1.5;
         margin-bottom: -12px;
     }
@@ -393,7 +393,7 @@ h3 {
     .carousel-inner .carousel-item img {
         object-fit: cover;
         /* Ensures images cover the entire carousel item */
-        height: 292px;
+        height: 393px;
         /* Fixed height to maintain a consistent size for carousel */
         transition: transform 0.5s ease-in-out;
         /* Smooth transition for image zoom effect */
@@ -424,7 +424,7 @@ h3 {
     .carousel-caption {
         position: absolute;
         top: 73%;
-        left: 128px;
+        left: 96px;
         bottom: auto;
         transform: translate(-50%, -50%);
         color: white;
@@ -433,7 +433,7 @@ h3 {
         /* Adds shadow to text for readability */
         background: rgba(0, 0, 0, 0.4);
         /* Dark overlay behind text */
-        padding: 7px;
+        padding: 0px;
         border-radius: 8px;
         transition: all 0.3s ease-in-out;
     }
@@ -450,7 +450,7 @@ h3 {
     .carousel-caption p {
         font-size: 8px;
         line-height: 1.5;
-        margin-bottom: 4px;
+        margin-bottom: -5px;
     }
 
     /* Carousel Caption Button */
@@ -459,7 +459,7 @@ h3 {
         border-color: #fbb034;
         color: white;
         padding: 10px 25px;
-        font-size: 8px;
+        font-size: 10px;
         font-weight: 600;
         text-transform: uppercase;
         border-radius: 30px;
@@ -477,7 +477,7 @@ h3 {
     .carousel-inner .carousel-item img {
         object-fit: cover;
         /* Ensures images cover the entire carousel item */
-        height: 292px;
+        height: 358px;
         /* Fixed height to maintain a consistent size for carousel */
         transition: transform 0.5s ease-in-out;
         /* Smooth transition for image zoom effect */
