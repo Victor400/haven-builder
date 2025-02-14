@@ -581,10 +581,6 @@ header.container {
     color: #fbb034;
 }
 
-
-
-
-
 /* General styling for the Portfolio section */
 .portfolio {
     padding: 50px 0;
@@ -592,8 +588,8 @@ header.container {
 
 /* Header Styling - Push the header down */
 .portfolio .section-header {
-    padding-top: 120px;  /* Add extra padding to push header down */
-    margin-bottom: 15px;
+    padding-top: 60px;  /* Add extra padding to push header down */
+    margin-bottom: 00px;
 }
 
 .portfolio .section-header h2 {
@@ -601,6 +597,7 @@ header.container {
     font-weight: 600;
     color: #333;
     margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
 .portfolio .section-header p {
@@ -618,6 +615,7 @@ header.container {
 
 .portfolio-image {
     margin-bottom: 30px; /* Space between the images */
+    position: relative; /* For positioning the summary inside the image */
 }
 
 .portfolio-image img {
@@ -630,6 +628,53 @@ header.container {
 /* Hover Effect for Images */
 .portfolio-image img:hover {
     transform: scale(1.05);  /* Slight zoom effect on hover */
+}
+
+/* Project Summary - Initially hidden */
+.project-summary {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    color: white;
+    opacity: 0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Project Summary - On Hover */
+.portfolio-image:hover .project-summary {
+    opacity: 1;
+}
+
+.project-summary h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.project-summary p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Portfolio Images Grid */
+.portfolio .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio .col-md-4 {
+    width: 32%; /* Set each image's width to 32% to fit 3 in a row */
+    margin-bottom: 20px; /* Space between rows */
 }
 
 
@@ -857,7 +902,14 @@ header.container {
         .project-gallery .col-md-4 {
             width: 100%; /* Images stack vertically on tablets */
         }
+
+        .portfolio .col-md-4 {
+            width: 48%; /* Adjust the width to 48% to have 2 images per row */
+            margin-bottom: 20px; /* Space between rows */
+        }
     }
+
+    
 
 
 /* Navbar responsiveness for 576px and smaller screens */
@@ -1062,6 +1114,11 @@ header.container {
 
     .project-gallery .col-md-4 {
         width: 100%; /* Images stack vertically on smaller mobile screens */
+    }
+
+    .portfolio .col-md-4 {
+        width: 100%; /* Stack images vertically for smaller screens */
+        margin-bottom: 20px; /* Space between rows */
     }
 
 
