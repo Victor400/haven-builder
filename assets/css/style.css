@@ -1121,6 +1121,14 @@ header.container {
         margin-bottom: 20px; /* Space between rows */
     }
 
+    .portfolio .section-header h2 {
+        font-size: 24px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    }
+
 
     .footer h5 {
         font-size: 16px;
