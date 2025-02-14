@@ -583,6 +583,57 @@ header.container {
 
 
 
+
+
+/* General styling for the Portfolio section */
+.portfolio {
+    padding: 50px 0;
+}
+
+/* Header Styling - Push the header down */
+.portfolio .section-header {
+    padding-top: 120px;  /* Add extra padding to push header down */
+    margin-bottom: 15px;
+}
+
+.portfolio .section-header h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.portfolio .section-header p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Image Gallery Styling */
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio-image {
+    margin-bottom: 30px; /* Space between the images */
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect for Images */
+.portfolio-image img:hover {
+    transform: scale(1.05);  /* Slight zoom effect on hover */
+}
+
+
+
 /* Navbar responsiveness for 1024px and smaller screens */
 @media screen and (max-width: 1024px) {
 
