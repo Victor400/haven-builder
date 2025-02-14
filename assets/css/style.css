@@ -87,6 +87,34 @@ h3 {
     color: #fff;
 }
 
+/* Highlight the link corresponding to the active section */
+.navbar-nav .nav-item .nav-link:target {
+    background-color: #fbb034;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Style the active link to make it stand out */
+.navbar-nav .nav-item .nav-link[aria-current="page"] {
+    background-color: #fbb034;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Optionally, add a hover effect to links */
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: #e6952f;
+    color: #fff;
+}
+
+/* Add some spacing between the links */
+.navbar-nav .nav-item .nav-link {
+    padding: 10px 15px;
+}
+
+
+
 .w100 {
     height: 100vh;
 }
