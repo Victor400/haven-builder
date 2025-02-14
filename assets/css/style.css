@@ -396,12 +396,6 @@ header.container {
     margin-top: 0;
 }
 
-.services .card i {
-    font-size: 40px;
-    color: #fbb034;
-    margin-bottom: 15px;
-}
-
 /* Hover Effects */
 .services .card:hover {
     transform: translateY(-10px);
@@ -461,7 +455,8 @@ header.container {
 }
 
 .services .btn-secondary {
-    background-color: #fbb034;;
+    background-color: #fbb034;
+    ;
     border-color: #fbb034;
     color: #333;
 }
@@ -471,6 +466,58 @@ header.container {
     border-color: #e6952f;
     color: #fff;
 }
+
+
+.services .row {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow the items to wrap in the row */
+    justify-content: space-between;
+    /* Ensure space between the cards */
+    gap: 20px;
+    /* Space between the cards */
+}
+
+
+.services .card .card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 0 10px 0;
+}
+
+.services .section-header {
+    margin-bottom: 15px;
+}
+
+.services .section-header h2 {
+    font-size: 30px;
+}
+
+.services .section-header p {
+    font-size: 18px;
+}
+
+.services .card-body {
+    padding: 15px;
+}
+
+.services .card .lead {
+    font-size: 18px;
+}
+
+
+.services .col-lg-4 {
+    width: 32%;
+}
+
+.services .btn {
+    width: 77%;
+    /* Make buttons stack on smaller screens */
+    margin-right: 0;
+
+}
+
 
 /* Navbar responsiveness for 1024px and smaller screens */
 @media screen and (max-width: 1024px) {
@@ -634,7 +681,7 @@ header.container {
 
     /* Subheading for the About section */
     .about-text p {
-        font-size: 14px;
+        font-size: 18px;
         color: #343a40;
         line-height: 1.6;
         margin-bottom: 4px;
@@ -646,7 +693,7 @@ header.container {
         border-color: #fbb034;
         color: white;
         padding: 10px 25px;
-        font-size: 10px;
+        font-size: 18px;
         font-weight: 600;
         border-radius: 30px;
         transition: all 0.3s ease;
@@ -662,66 +709,17 @@ header.container {
     .about-img .img-fluid {
         margin-top: 17px !important;
         margin-bottom: 19px;
-    }
-
-    .services .row {
-        display: flex;
-        flex-wrap: wrap; /* Allow the items to wrap in the row */
-        justify-content: space-between; /* Ensure space between the cards */
-        gap: 20px; /* Space between the cards */
-    }
-
-    .services .col-lg-4 {
-        width: 32%; /* Keep 3 cards side by side */
-    }
-
-    .services .card .card-title {
-        font-size: 18px;
-        font-weight: 600;
-        color: #fff;
-        margin: 0 0 10px 0;
-    }
-
-    .services .section-header {
-        margin-bottom: 15px;
-    }
-
-    .services .section-header h2 {
-        font-size: 24px;
-    }
-
-    .services .section-header p {
-        font-size: 13px;
-    }
-
-    .services .card-body {
-        padding: 15px;
+        width: 100%;
+        /* Make the image responsive */
+        max-width: 400px;
+        /* Even smaller on mobile screens */
     }
     .services .card .lead {
-        font-size: 12px; 
+        font-size: 14px;
     }
-    .services .row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .services .col-lg-4 {
-        width: 32%;
-    }
-
-    .services .btn {
-        width: 77%; /* Make buttons stack on smaller screens */
-        margin-right: 0; 
-       
-    }
-    .services .row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
 }
+
+
 
 /* Navbar responsiveness for 576px and smaller screens */
 @media screen and (max-width: 576px) {
@@ -746,8 +744,8 @@ header.container {
 
     .carousel-caption {
         position: absolute;
-        top: 73%;
-        left: 96px;
+        top: 75%;
+        left: 150px;
         bottom: auto;
         transform: translate(-50%, -50%);
         color: white;
@@ -771,9 +769,9 @@ header.container {
 
     /* Carousel Caption Text */
     .carousel-caption p {
-        font-size: 8px;
+        font-size: 10px;
         line-height: 1.5;
-        margin-bottom: -5px;
+        margin-bottom: 1px;
     }
 
     /* Carousel Caption Button */
@@ -827,7 +825,7 @@ header.container {
 
     /* About Text Styling */
     .about-text h2 {
-        font-size: 18px;
+        font-size: 22px;
         font-weight: 700;
         color: #333;
         /* Dark text for better contrast */
@@ -838,7 +836,7 @@ header.container {
 
     /* Subheading for the About section */
     .about-text p {
-        font-size: 11px;
+        font-size: 17px;
         color: #343a40;
         line-height: 1.6;
         margin-bottom: 4px;
@@ -867,7 +865,11 @@ header.container {
 
     .about-img .img-fluid {
         margin-top: 21px !important;
-        margin-bottom: 11px;
+        margin-bottom: 20px;
+        width: 100%;
+        /* Make the image responsive */
+        max-width: 352px;
+        
     }
 
     .services .row {
@@ -877,12 +879,15 @@ header.container {
     }
 
     .services .col-lg-4 {
-        width: 100%; /* Make cards 100% width on mobile */
+        width: 100%;
+        /* Make cards 100% width on mobile */
     }
 
     .services .card {
-        margin: 0 auto; /* Center the card on mobile */
-        width: 90%; /* Slightly reduce width for smaller cards */
+        margin: 0 auto;
+        /* Center the card on mobile */
+        width: 90%;
+        /* Slightly reduce width for smaller cards */
     }
 
     .services .section-header h2 {
@@ -890,7 +895,7 @@ header.container {
     }
 
     .services .section-header p {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .services .card-body {
@@ -899,19 +904,23 @@ header.container {
 
     .services .card .card-title {
         font-size: 23px;
-        margin-bottom: 5px; /* Closer to the description */
+        margin-bottom: 5px;
+        /* Closer to the description */
     }
 
     .services .card .lead {
         font-size: 18px;
-        margin-top: 18px; /* Bring the text closer to the title */
+        margin-top: 18px;
+        /* Bring the text closer to the title */
     }
+
     .services .btn {
         width: 56%;
-        font-size: 14px; /* Adjust font size for smaller screens */
+        font-size: 14px;
+        /* Adjust font size for smaller screens */
         padding: 8px 20px;
     }
 
-    
+
 
 }
