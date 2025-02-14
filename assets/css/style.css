@@ -404,13 +404,6 @@ header.container {
     /* Add a subtle shadow */
 }
 
-.services .card:hover i {
-    color: #333;
-    /* Change icon color on hover */
-}
-
-
-
 /* Flexbox Layout for Cards */
 .services .row {
     display: flex;
@@ -468,14 +461,8 @@ header.container {
 }
 
 
-.services .row {
-    display: flex;
-    flex-wrap: wrap;
-    /* Allow the items to wrap in the row */
-    justify-content: space-between;
-    /* Ensure space between the cards */
-    gap: 20px;
-    /* Space between the cards */
+.services .row .btn {
+    margin-bottom: 40px; /* Adjust this value to create space below the buttons */
 }
 
 
@@ -512,17 +499,27 @@ header.container {
 }
 
 .services .btn {
-    width: 57%;
+    width: 47%;
     /* Make buttons stack on smaller screens */
     margin-right: 0;
 
 }
+
+/* Aligning the buttons side by side */
+.services .button-container {
+    display: flex;
+    justify-content: center; 
+    gap: 30px; 
+    margin-top: 30px; 
+}
+
 
 /* Footer Section Styles */
 .footer {
     background-color: var(--primary-color);
     color: #fff;
     padding: 40px 0;
+    padding-top: 50px; /* Adjust the value to control the space */
 }
 
 .footer h5 {
@@ -782,7 +779,7 @@ header.container {
         /* Even smaller on mobile screens */
     }
     .services .card .lead {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .footer .col-md-3 {
@@ -796,7 +793,13 @@ header.container {
         color: #e1e1e1;
         line-height: 1.6;
     }
-}
+    
+        .col-md-6 {
+            flex: 0 0 auto;
+            width: 82%;
+        }
+    }
+
 
 /* Navbar responsiveness for 576px and smaller screens */
 @media screen and (max-width: 576px) {
@@ -986,7 +989,7 @@ header.container {
     }
 
     .services .card .lead {
-        font-size: 18px;
+        font-size: 12px;
         margin-top: 18px;
         /* Bring the text closer to the title */
     }
@@ -997,6 +1000,7 @@ header.container {
         /* Adjust font size for smaller screens */
         padding: 8px 20px;
     }
+
 
     .footer h5 {
         font-size: 16px;
