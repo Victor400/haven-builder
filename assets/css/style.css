@@ -849,6 +849,14 @@ header.container {
             flex: 0 0 auto;
             width: 82%;
         }
+
+        .portfolio-image {
+            margin-bottom: 20px; /* Reduce space between images for smaller screens */
+        }
+    
+        .project-gallery .col-md-4 {
+            width: 100%; /* Images stack vertically on tablets */
+        }
     }
 
 
@@ -1052,6 +1060,10 @@ header.container {
         padding: 8px 20px;
     }
 
+    .project-gallery .col-md-4 {
+        width: 100%; /* Images stack vertically on smaller mobile screens */
+    }
+
 
     .footer h5 {
         font-size: 16px;
@@ -1062,6 +1074,7 @@ header.container {
     .footer .bi {
         font-size: 16px;
     }
+
 
 }
 
