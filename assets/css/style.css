@@ -567,7 +567,7 @@ header.container {
 }
 
 .footer .text-center {
-    font-size: 14px;
+    font-size: 42px;
 }
 
 .footer .social-icon {
@@ -884,6 +884,9 @@ header.container {
     .footer .row {
         margin-bottom: 30px;
     }
+    .footer .text-center {
+        font-size: 38px;
+    }
     .footer p {
         font-size: 13px;
         color: #e1e1e1;
@@ -1138,6 +1141,9 @@ header.container {
     }
     .footer .bi {
         font-size: 16px;
+    }
+    .footer .text-center {
+        font-size: 30px;
     }
 
 
