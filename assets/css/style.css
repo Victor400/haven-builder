@@ -786,6 +786,83 @@ header.container {
 }
 
 
+/* Get a Quote Header */
+#get-a-quote-header {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 60px 0;
+}
+
+#get-a-quote-header h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 13px;
+    margin-top: 60px;
+}
+
+#get-a-quote-header p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Get a Quote Form Section */
+#get-a-quote {
+    padding: 50px 0;
+}
+
+/* Form Container */
+#get-a-quote .container {
+    max-width: 960px;
+}
+
+/* Form Row */
+.get-a-quote .row {
+    margin-bottom: 30px;
+}
+
+/* Form Titles */
+#get-a-quote h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input Fields and Textarea */
+.form-control {
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid #ccc;
+    padding: 15px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.form-control:focus {
+    border-color: #fbb034; /* Focus color */
+    box-shadow: 0 0 0 0.25rem rgba(255, 140, 0, 0.25);
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background-color: #fbb034; /* Yellow color */
+    color: white;
+    font-size: 14px; /* Smaller font size */
+    font-weight: 600;
+    padding: 10px 20px; /* Balanced padding for a neat button */
+    border-radius: 8px;
+    border: none;
+    transition: background-color 0.3s ease;
+    width: auto !important; /* Automatically adjust the width based on text size */
+    white-space: nowrap; /* Prevent text from wrapping if it’s too long */
+    margin-top: 20px; /* Add some space above */
+    display: inline-block; /* Makes the button's width adjust to the text */
+}
+
+button[type="submit"]:hover {
+    background-color: #e6952f; /* Darker yellow on hover */
+}
+
+
 
 /* Navbar responsiveness for 1024px and smaller screens */
 @media screen and (max-width: 1024px) {
@@ -1018,7 +1095,13 @@ header.container {
             width: 48%; /* Adjust the width to 48% to have 2 images per row */
             margin-bottom: 20px; /* Space between rows */
         }
+
+        button[type="submit"] {
+            font-size: 14px; /* Ensure the text size is consistent */
+            padding: 8px 16px; /* Slightly smaller padding for mobile */
+        }
     }
+    
 
     
 
