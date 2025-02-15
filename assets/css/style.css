@@ -452,7 +452,6 @@ header.container {
     font-weight: 600;
     color: #333;
     margin-bottom: 15px;
-    text-transform: uppercase;
     letter-spacing: 1px;
     transition: all 0.3s ease;
 }
@@ -854,12 +853,52 @@ button[type="submit"] {
     transition: background-color 0.3s ease;
     width: auto !important; /* Automatically adjust the width based on text size */
     white-space: nowrap; /* Prevent text from wrapping if it’s too long */
-    margin-top: 20px; /* Add some space above */
+    margin-top: 1px; /* Add some space above */
     display: inline-block; /* Makes the button's width adjust to the text */
 }
 
 button[type="submit"]:hover {
     background-color: #e6952f; /* Darker yellow on hover */
+}
+
+/* Style for the Success Page */
+#success {
+    background-color: #f0f8ff;  /* Light background color */
+    padding: 50px 20px;         /* Add padding around the content */
+    min-height: 100vh;          /* Full page height */
+}
+
+#success h1 {
+    font-size: 3rem;           
+    color: #333;           
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 160px
+}
+
+#success .lead {
+    font-size: 1.25rem;         /* Medium text size for the message */
+    color: #333;                /* Dark text color for readability */
+    margin-bottom: 30px;
+}
+
+#success .btn-primary {
+    background-color: #e6952f; /* Blue background for the button */
+    color: white;               /* White text on button */
+    font-size: 1.1rem;          /* Slightly larger font size */
+    padding: 12px 30px;         /* Button padding */
+    border-radius: 5px;         /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s;  /* Smooth transition */
+}
+
+#success .btn-primary:hover {
+    background-color: #e6952f;  
+    transform: scale(1.05);      /* Slight scale effect on hover */
+}
+
+#success .btn-primary:focus {
+    outline: none;              
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.75); 
 }
 
 

@@ -155,50 +155,49 @@
     </form> <!-- Close the form here -->
 </main>
 
-
-
-
-    <!-- Newsletter Subscription Modal Button -->
-    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#newsletterModal">
+<!-- Subscribe Button Position: Placing it after the main content (or in the footer) -->
+<section class="subscribe-section text-center my-5">
+    <h2>Stay Updated with Our Latest News</h2>
+    <p>Subscribe to our newsletter for the latest updates on new projects, offers, and more.</p>
+    <button type="button" class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#newsletterModal">
         Subscribe to our Newsletter
     </button>
+</section>
 
-    <!-- Modal Structure -->
-    <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="newsletterModalLabel">Subscribe to Our Newsletter</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- Subscription Form -->
-                    <form>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your full name"
-                                required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email address"
-                                required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="3"
-                                placeholder="Your message (optional)"></textarea>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Subscribe</button>
-                </div>
+<!-- Modal Structure for Newsletter Subscription -->
+<div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="newsletterModalLabel">Subscribe to Our Newsletter</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Subscription Form -->
+                <form action="success-page.html" method="GET"> <!-- Change to GET if no server-side processing -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Your message (optional)"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
+</div>
+
+
 
     <!--Footer / Contact Section -->
     <footer class="footer">
