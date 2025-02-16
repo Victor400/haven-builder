@@ -940,8 +940,8 @@ button[type="submit"]:hover {
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.75);
 }
 
- /* Contact Form Section */
- #contact-form {
+/* Contact Form Section */
+#contact-form {
     padding: 60px 20px;
 }
 
@@ -955,6 +955,109 @@ button[type="submit"]:hover {
     margin-top: 1.5rem !important;
     font-size: 18px;
 }
+
+/* Meet the Team Section */
+
+
+    .meet-the-team {
+        padding: 60px 0;
+        background-color: #f8f9fa;
+        margin-top: 10px;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    /* Team Cards Container */
+.team-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the cards horizontally */
+    gap: 20px; /* Optional, adds space between cards */
+}
+
+/* Team Card */
+.team-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: calc(33.33% - 20px); /* Adjust width for 3 cards per row, accounting for gap */
+    margin-bottom: 30px;
+}
+
+/* Adjust image size and position */
+.team-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #fbb034;
+}
+
+/* Card Content */
+.team-card-body {
+    padding: 20px;
+}
+
+
+.team-header h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 24px;
+    margin-top: 100px
+}
+
+.team-header p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Team Member Styling */
+.team-member {
+    padding: 30px 20px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Subtle shadow */
+    margin-bottom: 30px;
+    /* Spacing between team member cards */
+    transition: transform 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    /* Slight lift effect on hover */
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    /* Ensure the image covers the circle */
+    border-radius: 50%;
+    /* Circle shape */
+    margin-bottom: 15px;
+    /* Space between image and text */
+}
+
+.team-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #dee2e6;
+    margin-bottom: 5px;
+}
+
+.team-role {
+    font-size: 16px;
+    color: #dee2e6
+}
+
+
+
+
 
 
 
@@ -1037,27 +1140,47 @@ button[type="submit"]:hover {
         /* Slight scaling effect on hover */
     }
 
-     /* Get a Quote Header */
-     #get-a-quote-header {
-        padding: 50px 0; /* Adjust padding for smaller screens */
+    /* Get a Quote Header */
+    #get-a-quote-header {
+        padding: 50px 0;
+        /* Adjust padding for smaller screens */
     }
 
     #get-a-quote-header h1 {
-        font-size: 30px; /* Smaller font size for the header */
-        margin-top: 40px; /* Less margin on top */
+        font-size: 30px;
+        /* Smaller font size for the header */
+        margin-top: 40px;
+        /* Less margin on top */
     }
 
     #get-a-quote-header p {
-        font-size: 16px; /* Smaller text for description */
+        font-size: 16px;
+        /* Smaller text for description */
     }
 
     /* Get a Quote Form */
     #get-a-quote {
-        padding: 40px 0; /* Slightly smaller padding */
+        padding: 40px 0;
+        /* Slightly smaller padding */
     }
 
 
+
+    .team-member {
+        padding: 20px 15px;
+    }
+
+    .team-title {
+        font-size: 20px;
+    }
+
+    .team-role {
+        font-size: 14px;
+    }
 }
+
+
+
 
 /* Desktop devices (769px and up) */
 @media (min-width: 769px) {
@@ -1208,6 +1331,26 @@ button[type="submit"]:hover {
         /* Even smaller on mobile screens */
     }
 
+    .team-card {
+        width: calc(32% - 20px); /* Adjust for 2 cards per row */
+    }
+
+    .team-member {
+        padding: 20px;
+    }
+
+    .team-header h2 {
+        font-size: 28px;
+    }
+
+    .team-title {
+        font-size: 18px;
+    }
+
+    .team-role {
+        font-size: 14px;
+    }
+
     .services .card .lead {
         font-size: 12px;
     }
@@ -1230,10 +1373,7 @@ button[type="submit"]:hover {
         line-height: 1.6;
     }
 
-    .col-md-6 {
-        flex: 0 0 auto;
-        width: 82%;
-    }
+   
 
     .portfolio-image {
         margin-bottom: 20px;
@@ -1257,6 +1397,29 @@ button[type="submit"]:hover {
         /* Ensure the text size is consistent */
         padding: 8px 16px;
         /* Slightly smaller padding for mobile */
+    }
+
+    .team-card {
+        margin-bottom: 20px; /* Reduce bottom margin for better spacing */
+    }
+
+    .team-cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .team-card {
+        width: 38%; /* Set card width to take up 48% of container */
+        margin-bottom: 20px;
+    }
+
+    .team-title {
+        font-size: 20px; /* Reduce title font size for better fit */
+    }
+
+    .team-role {
+        font-size: 14px; /* Reduce role font size */
     }
 }
 
@@ -1501,6 +1664,27 @@ button[type="submit"]:hover {
         text-transform: uppercase;
     }
 
+    .team-card {
+        width: 100%; /* Cards take full width */
+    }
+
+    .team-card {
+        width: 100%; /* Make the card take up full width on small screens */
+        margin-bottom: 20px; /* Reduce bottom margin */
+    }
+
+    .team-title {
+        font-size: 18px; /* Further reduce title font size */
+    }
+
+    .team-role {
+        font-size: 12px; /* Further reduce role font size */
+    }
+
+    .team-header h2 {
+        font-size: 24px;
+    }
+
 
     .footer h5 {
         font-size: 16px;
@@ -1526,95 +1710,95 @@ button[type="submit"]:hover {
 /* caption responsiveness for 425px and smaller screens */
 @media screen and (max-width: 425px) {
 
-.carousel-caption {
-    position: absolute;
-    top: 68%;
-    left: 127px;
-    bottom: auto;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    /* Adds shadow to text for readability */
-    background: rgba(0, 0, 0, 0.4);
-    /* Dark overlay behind text */
-    padding: 0px;
-    border-radius: 8px;
-    transition: all 0.3s ease-in-out;
-}
+    .carousel-caption {
+        position: absolute;
+        top: 68%;
+        left: 127px;
+        bottom: auto;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        /* Adds shadow to text for readability */
+        background: rgba(0, 0, 0, 0.4);
+        /* Dark overlay behind text */
+        padding: 0px;
+        border-radius: 8px;
+        transition: all 0.3s ease-in-out;
+    }
 
-/* Carousel Caption Title */
-.carousel-caption h5 {
-    font-size: 17px;
-    font-weight: 700;
-    margin-bottom: 4px;
-    letter-spacing: 1px;
-}
+    /* Carousel Caption Title */
+    .carousel-caption h5 {
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 4px;
+        letter-spacing: 1px;
+    }
 
-.carousel-caption .btn-warning {
-    background-color: #fbb034;
-    border-color: #fbb034;
-    color: white;
-    padding: 0px 19px;
-    font-size: 1.0em;
-    font-weight: 600;
-    border-radius: 30px;
-    transition: all 0.3s ease;
-}
+    .carousel-caption .btn-warning {
+        background-color: #fbb034;
+        border-color: #fbb034;
+        color: white;
+        padding: 0px 19px;
+        font-size: 1.0em;
+        font-weight: 600;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+    }
 
-.about-text h2 {
-    font-size: 18px;
-    font-weight: 700;
-    color: #333;
-    line-height: 1.4;
-    margin-bottom: 11px;
-    text-align: left;
-}
+    .about-text h2 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #333;
+        line-height: 1.4;
+        margin-bottom: 11px;
+        text-align: left;
+    }
 
-.about-text p {
-    font-size: 12px;
-    color: #343a40;
-    line-height: 1.6;
-    margin-bottom: 4px;
-}
+    .about-text p {
+        font-size: 12px;
+        color: #343a40;
+        line-height: 1.6;
+        margin-bottom: 4px;
+    }
 
-.about-text .btn-warning {
-    background-color: #fbb034;
-    border-color: #fbb034;
-    color: white;
-    padding: 10px 25px;
-    font-size: 10px;
-    font-weight: 600;
-    border-radius: 30px;
-    transition: all 0.3s ease;
-}
+    .about-text .btn-warning {
+        background-color: #fbb034;
+        border-color: #fbb034;
+        color: white;
+        padding: 10px 25px;
+        font-size: 10px;
+        font-weight: 600;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+    }
 
-.services .section-header p {
-    font-size: 13px;
-}
+    .services .section-header p {
+        font-size: 13px;
+    }
 
-.services .card .lead {
-    font-size: 12px;
-    margin-top: 18px;
-}
+    .services .card .lead {
+        font-size: 12px;
+        margin-top: 18px;
+    }
 
-.services .card .card-title {
-    font-size: 23px;
-    margin-bottom: 0px;
-}
+    .services .card .card-title {
+        font-size: 23px;
+        margin-bottom: 0px;
+    }
 
-.services .btn {
-    width: 62%;
-    font-size: 14px;
-    padding: 8px 20px;
-    background-color: #fbb034;
-    border: none;
-    color: #333;
-    font-size: 13px;
-    font-weight: 600;
-    padding: 12px 25px;
-    border-radius: 25px;
-    transition: all 0.3s ease;
-}
+    .services .btn {
+        width: 62%;
+        font-size: 14px;
+        padding: 8px 20px;
+        background-color: #fbb034;
+        border: none;
+        color: #333;
+        font-size: 13px;
+        font-weight: 600;
+        padding: 12px 25px;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+    }
 
 }
