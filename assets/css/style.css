@@ -951,6 +951,11 @@ button[type="submit"]:hover {
     margin-bottom: 20px;
 }
 
+.mt-4 {
+    margin-top: 1.5rem !important;
+    font-size: 18px;
+}
+
 
 
 /* Large desktop screens (min-width: 1200px) */
@@ -1032,6 +1037,26 @@ button[type="submit"]:hover {
         /* Slight scaling effect on hover */
     }
 
+     /* Get a Quote Header */
+     #get-a-quote-header {
+        padding: 50px 0; /* Adjust padding for smaller screens */
+    }
+
+    #get-a-quote-header h1 {
+        font-size: 30px; /* Smaller font size for the header */
+        margin-top: 40px; /* Less margin on top */
+    }
+
+    #get-a-quote-header p {
+        font-size: 16px; /* Smaller text for description */
+    }
+
+    /* Get a Quote Form */
+    #get-a-quote {
+        padding: 40px 0; /* Slightly smaller padding */
+    }
+
+
 }
 
 /* Desktop devices (769px and up) */
@@ -1105,7 +1130,7 @@ button[type="submit"]:hover {
         border-color: #fbb034;
         color: white;
         padding: 10px 25px;
-        font-size: 10px;
+        font-size: 15px;
         font-weight: 600;
         border-radius: 30px;
         transition: all 0.3s ease;
@@ -1161,7 +1186,7 @@ button[type="submit"]:hover {
         border-color: #fbb034;
         color: white;
         padding: 10px 25px;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 600;
         border-radius: 30px;
         transition: all 0.3s ease;
@@ -1235,7 +1260,7 @@ button[type="submit"]:hover {
     }
 }
 
-/* Navbar responsiveness for 600px and smaller screens */
+/*  Responsiveness for 600px and smaller screens */
 @media screen and (max-width: 600px) {
     #navbar {
         padding: 10px 15px;
@@ -1258,8 +1283,8 @@ button[type="submit"]:hover {
 
     .carousel-caption {
         position: absolute;
-        top: 71%;
-        left: 228px;
+        top: 70%;
+        left: 192px;
         bottom: auto;
         transform: translate(-50%, -50%);
         color: white;
@@ -1268,7 +1293,7 @@ button[type="submit"]:hover {
         /* Adds shadow to text for readability */
         background: rgba(0, 0, 0, 0.4);
         /* Dark overlay behind text */
-        padding: 14px;
+        padding: 4px;
         border-radius: 8px;
         transition: all 0.3s ease-in-out;
     }
@@ -1283,7 +1308,7 @@ button[type="submit"]:hover {
 
     /* Carousel Caption Text */
     .carousel-caption p {
-        font-size: 10px;
+        font-size: 12px;
         line-height: 1.5;
         margin-bottom: 1px;
     }
@@ -1293,10 +1318,9 @@ button[type="submit"]:hover {
         background-color: #fbb034;
         border-color: #fbb034;
         color: white;
-        padding: 10px 25px;
-        font-size: 10px;
+        padding: 0px 20px;
+        font-size: 1.0em;
         font-weight: 600;
-        text-transform: uppercase;
         border-radius: 30px;
         transition: all 0.3s ease;
     }
@@ -1498,50 +1522,99 @@ button[type="submit"]:hover {
 }
 
 
-/* Navbar responsiveness for 400px and smaller screens */
-@media screen and (max-width: 400px) {
-    .carousel-caption {
-        position: absolute;
-        top: 41%;
-        left: 228px;
-        bottom: auto;
-        transform: translate(-50%, -50%);
-        color: white;
-        text-align: center;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        /* Adds shadow to text for readability */
-        background: rgba(0, 0, 0, 0.4);
-        /* Dark overlay behind text */
-        padding: 0px;
-        border-radius: 8px;
-        transition: all 0.3s ease-in-out;
-    }
 
-    /* Carousel Caption Title */
-    .carousel-caption h5 {
-        font-size: 17px;
-        font-weight: 700;
-        margin-bottom: 4px;
-        letter-spacing: 1px;
-    }
+/* caption responsiveness for 425px and smaller screens */
+@media screen and (max-width: 425px) {
 
-    /* Carousel Caption Text */
-    .carousel-caption p {
-        font-size: 10px;
-        line-height: 1.5;
-        margin-bottom: 1px;
-    }
-
-    .carousel-caption .btn-warning {
-        background-color: #fbb034;
-        border-color: #fbb034;
-        color: white;
-        padding: 10px 25px;
-        font-size: 10px;
-        font-weight: 600;
-        text-transform: uppercase;
-        border-radius: 30px;
-        transition: all 0.3s ease;
-    }
+.carousel-caption {
+    position: absolute;
+    top: 68%;
+    left: 127px;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Adds shadow to text for readability */
+    background: rgba(0, 0, 0, 0.4);
+    /* Dark overlay behind text */
+    padding: 0px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
 }
 
+/* Carousel Caption Title */
+.carousel-caption h5 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+}
+
+.carousel-caption .btn-warning {
+    background-color: #fbb034;
+    border-color: #fbb034;
+    color: white;
+    padding: 0px 19px;
+    font-size: 1.0em;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.about-text h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.4;
+    margin-bottom: 11px;
+    text-align: left;
+}
+
+.about-text p {
+    font-size: 12px;
+    color: #343a40;
+    line-height: 1.6;
+    margin-bottom: 4px;
+}
+
+.about-text .btn-warning {
+    background-color: #fbb034;
+    border-color: #fbb034;
+    color: white;
+    padding: 10px 25px;
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.services .section-header p {
+    font-size: 13px;
+}
+
+.services .card .lead {
+    font-size: 12px;
+    margin-top: 18px;
+}
+
+.services .card .card-title {
+    font-size: 23px;
+    margin-bottom: 0px;
+}
+
+.services .btn {
+    width: 62%;
+    font-size: 14px;
+    padding: 8px 20px;
+    background-color: #fbb034;
+    border: none;
+    color: #333;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+}
