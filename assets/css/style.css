@@ -290,7 +290,7 @@ textarea.form-control {
     position: absolute;
     top: 74%;
     bottom: auto;
-    left: 415px;
+    left: 452px;
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
@@ -313,7 +313,7 @@ textarea.form-control {
 
 /* Carousel Caption Text */
 .carousel-caption p {
-    font-size: 18px;
+    font-size: 19px;
     line-height: 1.5;
     margin-bottom: 9px;
 }
@@ -406,6 +406,15 @@ textarea.form-control {
     border-color: #f7a800;
     transform: scale(1.05);
     /* Slight scaling effect on hover */
+}
+
+.about-img .img-fluid {
+    margin-top: 36px !important;
+    margin-bottom: 19px;
+    width: 100%;
+    /* Make the image responsive */
+    max-width: 400px;
+    /* Even smaller on mobile screens */
 }
 
 /* General Styling for the About Section */
@@ -569,7 +578,8 @@ header.container {
 
 
 .services .row .btn {
-    margin-bottom: 40px; /* Adjust this value to create space below the buttons */
+    margin-bottom: 40px;
+    /* Adjust this value to create space below the buttons */
 }
 
 
@@ -615,9 +625,9 @@ header.container {
 /* Aligning the buttons side by side */
 .services .button-container {
     display: flex;
-    justify-content: center; 
-    gap: 30px; 
-    margin-top: 30px; 
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
 }
 
 
@@ -626,7 +636,8 @@ header.container {
     background-color: var(--primary-color);
     color: #fff;
     padding: 40px 0;
-    padding-top: 50px; /* Adjust the value to control the space */
+    padding-top: 50px;
+    /* Adjust the value to control the space */
 }
 
 .footer h5 {
@@ -695,7 +706,8 @@ header.container {
 
 /* Header Styling - Push the header down */
 .portfolio .section-header {
-    padding-top: 60px;  /* Add extra padding to push header down */
+    padding-top: 60px;
+    /* Add extra padding to push header down */
     margin-bottom: 00px;
 }
 
@@ -721,8 +733,10 @@ header.container {
 }
 
 .portfolio-image {
-    margin-bottom: 30px; /* Space between the images */
-    position: relative; /* For positioning the summary inside the image */
+    margin-bottom: 30px;
+    /* Space between the images */
+    position: relative;
+    /* For positioning the summary inside the image */
 }
 
 .portfolio-image img {
@@ -734,7 +748,8 @@ header.container {
 
 /* Hover Effect for Images */
 .portfolio-image img:hover {
-    transform: scale(1.05);  /* Slight zoom effect on hover */
+    transform: scale(1.05);
+    /* Slight zoom effect on hover */
 }
 
 /* Project Summary - Initially hidden */
@@ -744,7 +759,8 @@ header.container {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    background: rgba(0, 0, 0, 0.5);
+    /* Transparent black background */
     color: white;
     opacity: 0;
     padding: 20px;
@@ -780,14 +796,17 @@ header.container {
 }
 
 .portfolio .col-md-4 {
-    width: 32%; /* Set each image's width to 32% to fit 3 in a row */
-    margin-bottom: 20px; /* Space between rows */
+    width: 32%;
+    /* Set each image's width to 32% to fit 3 in a row */
+    margin-bottom: 20px;
+    /* Space between rows */
 }
 
 
 /* Get a Quote Header */
 #get-a-quote-header {
-    background-color: #f8f9fa; /* Light background color */
+    background-color: #f8f9fa;
+    /* Light background color */
     padding: 60px 0;
 }
 
@@ -829,7 +848,8 @@ header.container {
 
 /* Input Fields and Textarea */
 .form-control {
-    border-radius: 8px; /* Rounded corners */
+    border-radius: 8px;
+    /* Rounded corners */
     border: 1px solid #ccc;
     padding: 15px;
     font-size: 16px;
@@ -837,70 +857,115 @@ header.container {
 }
 
 .form-control:focus {
-    border-color: #fbb034; /* Focus color */
+    border-color: #fbb034;
+    /* Focus color */
     box-shadow: 0 0 0 0.25rem rgba(255, 140, 0, 0.25);
 }
 
 /* Submit Button */
 button[type="submit"] {
-    background-color: #fbb034; /* Yellow color */
+    background-color: #fbb034;
+    /* Yellow color */
     color: white;
-    font-size: 14px; /* Smaller font size */
+    font-size: 14px;
+    /* Smaller font size */
     font-weight: 600;
-    padding: 10px 20px; /* Balanced padding for a neat button */
+    padding: 10px 20px;
+    /* Balanced padding for a neat button */
     border-radius: 8px;
     border: none;
     transition: background-color 0.3s ease;
-    width: auto !important; /* Automatically adjust the width based on text size */
-    white-space: nowrap; /* Prevent text from wrapping if it’s too long */
-    margin-top: 1px; /* Add some space above */
-    display: inline-block; /* Makes the button's width adjust to the text */
+    width: auto !important;
+    /* Automatically adjust the width based on text size */
+    white-space: nowrap;
+    /* Prevent text from wrapping if it’s too long */
+    margin-top: 1px;
+    /* Add some space above */
+    display: inline-block;
+    /* Makes the button's width adjust to the text */
 }
 
 button[type="submit"]:hover {
-    background-color: #e6952f; /* Darker yellow on hover */
+    background-color: #e6952f;
+    /* Darker yellow on hover */
 }
 
 /* Style for the Success Page */
 #success {
-    background-color: #f0f8ff;  /* Light background color */
-    padding: 50px 20px;         /* Add padding around the content */
-    min-height: 100vh;          /* Full page height */
+    background-color: #f0f8ff;
+    /* Light background color */
+    padding: 50px 20px;
+    /* Add padding around the content */
+    min-height: 100vh;
+    /* Full page height */
 }
 
 #success h1 {
-    font-size: 3rem;           
-    color: #333;           
+    font-size: 3rem;
+    color: #333;
     font-weight: bold;
     margin-bottom: 30px;
     margin-top: 160px
 }
 
 #success .lead {
-    font-size: 1.25rem;         /* Medium text size for the message */
-    color: #333;                /* Dark text color for readability */
+    font-size: 1.25rem;
+    /* Medium text size for the message */
+    color: #333;
+    /* Dark text color for readability */
     margin-bottom: 30px;
 }
 
 #success .btn-primary {
-    background-color: #e6952f; /* Blue background for the button */
-    color: white;               /* White text on button */
-    font-size: 1.1rem;          /* Slightly larger font size */
-    padding: 12px 30px;         /* Button padding */
-    border-radius: 5px;         /* Rounded corners */
-    transition: background-color 0.3s, transform 0.3s;  /* Smooth transition */
+    background-color: #e6952f;
+    /* Blue background for the button */
+    color: white;
+    /* White text on button */
+    font-size: 1.1rem;
+    /* Slightly larger font size */
+    padding: 12px 30px;
+    /* Button padding */
+    border-radius: 5px;
+    /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s;
+    /* Smooth transition */
 }
 
 #success .btn-primary:hover {
-    background-color: #e6952f;  
-    transform: scale(1.05);      /* Slight scale effect on hover */
+    background-color: #e6952f;
+    transform: scale(1.05);
+    /* Slight scale effect on hover */
 }
 
 #success .btn-primary:focus {
-    outline: none;              
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.75); 
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.75);
 }
 
+
+
+/* Large desktop screens (min-width: 1200px) */
+@media (min-width: 2560px) {
+    .carousel-caption {
+        top: 82%;
+        /* Slightly higher position */
+        font-size: 20px;
+        /* Larger font size for extra large screens */
+        padding: 10px;
+    }
+}
+
+
+/* Large desktop screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+    .carousel-caption {
+        top: 72%;
+        /* Slightly higher position */
+        font-size: 20px;
+        /* Larger font size for extra large screens */
+        padding: 10px;
+    }
+}
 
 
 /* Navbar responsiveness for 1024px and smaller screens */
@@ -958,6 +1023,16 @@ button[type="submit"]:hover {
         /* Slight scaling effect on hover */
     }
 
+}
+
+/* Desktop devices (769px and up) */
+@media (min-width: 769px) {
+    .carousel-caption {
+        top: 72%;
+        font-size: 18px;
+        /* Larger font size for desktop */
+        padding: 8px;
+    }
 }
 
 /* Navbar responsiveness for 768px and smaller screens */
@@ -1098,55 +1173,61 @@ button[type="submit"]:hover {
         max-width: 400px;
         /* Even smaller on mobile screens */
     }
+
     .services .card .lead {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .footer .col-md-3 {
         text-align: center;
     }
+
     .footer .row {
         margin-bottom: 30px;
     }
+
     .footer .text-center {
         font-size: 38px;
     }
+
     .footer p {
         font-size: 13px;
         color: #e1e1e1;
         line-height: 1.6;
     }
-    
-        .col-md-6 {
-            flex: 0 0 auto;
-            width: 82%;
-        }
 
-        .portfolio-image {
-            margin-bottom: 20px; /* Reduce space between images for smaller screens */
-        }
-    
-        .project-gallery .col-md-4 {
-            width: 100%; /* Images stack vertically on tablets */
-        }
-
-        .portfolio .col-md-4 {
-            width: 48%; /* Adjust the width to 48% to have 2 images per row */
-            margin-bottom: 20px; /* Space between rows */
-        }
-
-        button[type="submit"] {
-            font-size: 14px; /* Ensure the text size is consistent */
-            padding: 8px 16px; /* Slightly smaller padding for mobile */
-        }
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 82%;
     }
-    
 
-    
+    .portfolio-image {
+        margin-bottom: 20px;
+        /* Reduce space between images for smaller screens */
+    }
 
+    .project-gallery .col-md-4 {
+        width: 100%;
+        /* Images stack vertically on tablets */
+    }
 
-/* Navbar responsiveness for 576px and smaller screens */
-@media screen and (max-width: 576px) {
+    .portfolio .col-md-4 {
+        width: 48%;
+        /* Adjust the width to 48% to have 2 images per row */
+        margin-bottom: 20px;
+        /* Space between rows */
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+        /* Ensure the text size is consistent */
+        padding: 8px 16px;
+        /* Slightly smaller padding for mobile */
+    }
+}
+
+/* Navbar responsiveness for 600px and smaller screens */
+@media screen and (max-width: 600px) {
     #navbar {
         padding: 10px 15px;
         height: auto;
@@ -1168,8 +1249,8 @@ button[type="submit"]:hover {
 
     .carousel-caption {
         position: absolute;
-        top: 75%;
-        left: 150px;
+        top: 71%;
+        left: 228px;
         bottom: auto;
         transform: translate(-50%, -50%);
         color: white;
@@ -1178,7 +1259,7 @@ button[type="submit"]:hover {
         /* Adds shadow to text for readability */
         background: rgba(0, 0, 0, 0.4);
         /* Dark overlay behind text */
-        padding: 0px;
+        padding: 14px;
         border-radius: 8px;
         transition: all 0.3s ease-in-out;
     }
@@ -1260,7 +1341,7 @@ button[type="submit"]:hover {
 
     /* Subheading for the About section */
     .about-text p {
-        font-size: 17px;
+        font-size: 13px;
         color: #343a40;
         line-height: 1.6;
         margin-bottom: 4px;
@@ -1293,7 +1374,7 @@ button[type="submit"]:hover {
         width: 100%;
         /* Make the image responsive */
         max-width: 352px;
-        
+
     }
 
     .services .row {
@@ -1333,7 +1414,7 @@ button[type="submit"]:hover {
     }
 
     .services .card .lead {
-        font-size: 12px;
+        font-size: 14px;
         margin-top: 18px;
         /* Bring the text closer to the title */
     }
@@ -1343,15 +1424,40 @@ button[type="submit"]:hover {
         font-size: 14px;
         /* Adjust font size for smaller screens */
         padding: 8px 20px;
+
+        background-color: #fbb034;
+        border: none;
+        color: #333;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 12px 25px;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+    }
+
+    .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown-item {
+        display: block;
+        width: 100%;
+        /* Ensures the items span the full width */
+        padding: 10px 20px;
+        /* Adjust padding if necessary */
     }
 
     .project-gallery .col-md-4 {
-        width: 100%; /* Images stack vertically on smaller mobile screens */
+        width: 100%;
+        /* Images stack vertically on smaller mobile screens */
     }
 
     .portfolio .col-md-4 {
-        width: 100%; /* Stack images vertically for smaller screens */
-        margin-bottom: 20px; /* Space between rows */
+        width: 100%;
+        /* Stack images vertically for smaller screens */
+        margin-bottom: 20px;
+        /* Space between rows */
     }
 
     .portfolio .section-header h2 {
@@ -1366,12 +1472,15 @@ button[type="submit"]:hover {
     .footer h5 {
         font-size: 16px;
     }
+
     .footer p {
         font-size: 12px;
     }
+
     .footer .bi {
         font-size: 16px;
     }
+
     .footer .text-center {
         font-size: 30px;
     }
@@ -1380,7 +1489,50 @@ button[type="submit"]:hover {
 }
 
 
+/* Navbar responsiveness for 400px and smaller screens */
+@media screen and (max-width: 400px) {
+    .carousel-caption {
+        position: absolute;
+        top: 41%;
+        left: 228px;
+        bottom: auto;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        /* Adds shadow to text for readability */
+        background: rgba(0, 0, 0, 0.4);
+        /* Dark overlay behind text */
+        padding: 0px;
+        border-radius: 8px;
+        transition: all 0.3s ease-in-out;
+    }
 
+    /* Carousel Caption Title */
+    .carousel-caption h5 {
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 4px;
+        letter-spacing: 1px;
+    }
 
+    /* Carousel Caption Text */
+    .carousel-caption p {
+        font-size: 10px;
+        line-height: 1.5;
+        margin-bottom: 1px;
+    }
 
+    .carousel-caption .btn-warning {
+        background-color: #fbb034;
+        border-color: #fbb034;
+        color: white;
+        padding: 10px 25px;
+        font-size: 10px;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+    }
+}
 

@@ -69,138 +69,143 @@
         </div>
     </nav>
 
-
-    <!-- Main Content Section -->
-<main>
-    <!-- Get a Quote Header -->
+<!-- Header Section -->
+<header>
     <section id="get-a-quote-header" class="bg-light py-5">
         <div class="container text-center">
             <h1 class="display-4">Get a Quote</h1>
-            <form action="success-page.html" method="GET">
-                <p class="lead">Fill out the form below to request a quote for your project.</p>
+            <p class="lead">Fill out the form below to request a quote for your project.</p>
+            
+            <!-- Added message to reflect the page's action -->
+            <h2 class="mt-4">We are here to help you bring your project to life! Fill out the details to get a personalized quote.</h2> <!-- New h2 element here -->
         </div>
     </section>
+</header>
 
-    <!-- Get a Quote Form Section -->
-    <section id="get-a-quote" class="section-padding">
-        <div class="container">
+<main>
+<!-- Main content form section -->
+<section id="get-a-quote" class="section-padding">
+    <div class="container">
+        <h2 class="text-center mb-5">Request a Quote</h2>
+        <!-- Rest of the form content remains unchanged -->
+        <form action="success-page.html" method="GET">
             <div class="row">
-                <!-- First Container for Personal Details -->
-                <div class="col-md-6">
+                <!-- Personal Details Section -->
+                <section class="col-md-6">
                     <h3 class="text-center mb-4">Personal Details</h3>
                     <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your name" required>
                     </div>
                     <div class="mb-3">
-                        <label for="phone" class="form-label">Phone Number</label>
-                        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number"
-                            required>
+                        <label class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" placeholder="Enter your phone number" required>
                     </div>
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email Address</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-control" placeholder="Enter your email" required>
                     </div>
                     <div class="mb-3">
-                        <label for="address" class="form-label">Home Address</label>
-                        <input type="text" class="form-control" id="address" placeholder="Enter your address"
-                            required>
+                        <label class="form-label">Home Address</label>
+                        <input type="text" class="form-control" placeholder="Enter your address" required>
                     </div>
-                </div>
+                </section>
 
-                <!-- Second Container for Project Details -->
-                <div class="col-md-6">
+                <!-- Project Details Section -->
+                <section class="col-md-6">
                     <h3 class="text-center mb-4">Project Details</h3>
                     <div class="mb-3">
-                        <label for="projectType" class="form-label">Project Type</label>
-                        <input type="text" class="form-control" id="projectType"
-                            placeholder="What type of project is it?" required>
+                        <label class="form-label">Project Type</label>
+                        <input type="text" class="form-control" placeholder="What type of project is it?" required>
                     </div>
                     <div class="mb-3">
-                        <label for="time" class="form-label">Maximum Time for this Project</label>
-                        <input type="text" class="form-control" id="time" placeholder="Enter the maximum time"
-                            required>
+                        <label class="form-label">Maximum Time for this Project</label>
+                        <input type="text" class="form-control" placeholder="Enter the maximum time" required>
                     </div>
                     <div class="mb-3">
-                        <label for="budget" class="form-label">Estimated Budget</label>
-                        <input type="number" class="form-control" id="budget"
-                            placeholder="Enter your estimated budget" required>
+                        <label class="form-label">Estimated Budget</label>
+                        <input type="number" class="form-control" placeholder="Enter your estimated budget" required>
                     </div>
                     <div class="mb-3">
-                        <label for="company" class="form-label">Company Name</label>
-                        <input type="text" class="form-control" id="company" placeholder="Enter your company name"
-                            required>
+                        <label class="form-label">Company Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your company name" required>
                     </div>
-                </div>
+                </section>
             </div>
 
             <!-- Required Skills Section -->
             <div class="mb-3">
-                <label for="skills" class="form-label">Required Skills</label>
-                <textarea class="form-control" id="skills" rows="4"
-                    placeholder="Enter required skills for this project" required></textarea>
+                <label class="form-label">Required Skills</label>
+                <textarea class="form-control" rows="4" placeholder="Enter required skills for this project" required></textarea>
             </div>
 
             <!-- Message Section -->
             <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"
-                    required></textarea>
+                <label class="form-label">Message</label>
+                <textarea class="form-control" rows="4" placeholder="Enter your message" required></textarea>
             </div>
 
-            <!-- Submit Button -->
-            <button type="submit" class="btn btn-warning w-100">Submit Request</button>
-        </div>
-    </section>
-    </form> <!-- Close the form here -->
-</main>
-
-<!-- Subscribe Button Position: Placing it after the main content (or in the footer) -->
-<section class="subscribe-section text-center my-5">
-    <h2>Stay Updated with Our Latest News</h2>
-    <p>Subscribe to our newsletter for the latest updates on new projects, offers, and more.</p>
-    <button type="button" class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#newsletterModal">
-        Subscribe to our Newsletter
-    </button>
+            <!-- Submit Button Section -->
+            <div>
+                <h3 class="text-center mb-4">Submit Your Request</h3>
+                <button type="submit" class="btn btn-warning w-100">Submit Request</button>
+            </div>
+        </form>
+        <!-- End form -->
+    </div>
 </section>
 
-<!-- Modal Structure for Newsletter Subscription -->
-<div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="newsletterModalLabel">Subscribe to Our Newsletter</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <!-- Subscription Form -->
-                <form action="success-page.html" method="GET"> <!-- Change to GET if no server-side processing -->
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Full Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email Address</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" rows="3" placeholder="Your message (optional)"></textarea>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Subscribe</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-
+</main>
 
     <!--Footer / Contact Section -->
     <footer class="footer">
+        <section class="subscribe-section text-center my-5">
+            <h2>Stay Updated with Our Latest News</h2>
+            <p>Subscribe to our newsletter for the latest updates on new projects, offers, and more.</p>
+            <button type="button" class="btn btn-warning btn-lg" data-bs-toggle="modal"
+                data-bs-target="#newsletterModal">
+                Subscribe to our Newsletter
+            </button>
+        </section>
+
+        <!-- Modal Structure for Newsletter Subscription -->
+        <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="newsletterModalLabel">Subscribe to Our Newsletter</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Subscription Form -->
+                        <form action="success-page.html" method="GET">
+                            <!-- Change to GET if no server-side processing -->
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your full name"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email"
+                                    placeholder="Enter your email address" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="3"
+                                    placeholder="Your message (optional)"></textarea>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="container">
             <div class="row">
                 <!-- About Us Section -->
@@ -214,11 +219,11 @@
                 <div class="col-md-3">
                     <h5>Quick Links</h5>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="view-our-projects.html">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="index.html" aria-label="Go to Home page">Home</a></li>
+                        <li><a href="#" aria-label="Learn more about us">About Us</a></li>
+                        <li><a href="#services" aria-label="View our services">Services</a></li>
+                        <li><a href="view-our-projects.html" aria-label="See our portfolio">Portfolio</a></li>
+                        <li><a href="#" aria-label="Contact us">Contact</a></li>
                     </ul>
                 </div>
 
@@ -255,8 +260,8 @@
                     </div>
                 </div>
             </div>
+        </div> <!-- .container ends here -->
     </footer>
-
 
     <!--Popper JS-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
