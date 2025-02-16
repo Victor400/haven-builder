@@ -10,7 +10,7 @@
     --secondary-color: #a5cce1;
     /*light blue*/
     --highlight-color: #c2a8a0;
-    --highlight-color-light: #ff9966;
+    --highlight-color-light: #fbb034;
 }
 
 /*Global styles*/
@@ -715,8 +715,6 @@ header.container {
     font-size: 36px;
     font-weight: 600;
     color: #333;
-    margin-bottom: 15px;
-    text-transform: uppercase;
 }
 
 .portfolio .section-header p {
@@ -917,7 +915,7 @@ button[type="submit"]:hover {
 }
 
 #success .btn-primary {
-    background-color: #e6952f;
+    background-color: #fbb034;
     /* Blue background for the button */
     color: white;
     /* White text on button */
@@ -940,6 +938,17 @@ button[type="submit"]:hover {
 #success .btn-primary:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.75);
+}
+
+ /* Contact Form Section */
+ #contact-form {
+    padding: 60px 20px;
+}
+
+#contact-form h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 
