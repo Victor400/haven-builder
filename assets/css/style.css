@@ -427,10 +427,106 @@ header.container {
 }
 
 /**css for about*/
-/* About Section Styles */
+
+/* Main Content Section */
 .about {
-    padding: 20px 0;
+    padding: 60px 0;
+    background-color: #f4f4f4;
+}
+
+/* About Us Header */
+.about h2 {
+    font-size: 38px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.about {
     background-color: var(--highlight-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    padding: 60px 0;
+    padding: 20px 0;
+    border-radius: 8px; /* Rounded corners */
+}
+.about-text p {
+    font-family: 'Georgia', serif;
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+/* About Image */
+.about-img img {
+    border-radius: 8px; /* Rounded corners for the image */
+    max-width: 100%;
+    height: auto;
+}
+/* Purpose Section */
+.purpose {
+    background-color: #e9f7fa; /* Soft blue background */
+    text-align: center;
+    border-radius: 8px; /* Rounded corners */
+}
+.purpose .about-text h2 {
+    font-family: var(--secondary-font);
+    font-size: 26px; 
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 55px;
+}
+.purpose-text p {
+    font-family: 'Georgia', serif;
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Goals Section */
+.goals {
+    background-color: #ffffff; /* White background for contrast */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Rounded corners */
+}
+.goals .about-text {
+    font-family: 'Georgia', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 26px; /* Further reduce title size */
+}
+.goals .about-text h2 {
+    font-family:'Georgia', serif;
+    font-size: 26px; /* Further reduce title size */
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+.goals ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+.goals ul li {
+    margin-bottom: 15px;
+    line-height: 1.8
+    
+}
+.goals ul li strong {
+    color: var(--primary-color); /* Blue for emphasis */
 }
 
 /* Section Header */
@@ -1280,19 +1376,33 @@ button[type="submit"]:hover {
         background-color: var(--highlight-color);
     }
 
+    .col-lg-8, .col-lg-4 {
+        text-align: center;
+    }
+    
+    .about-img img {
+        margin-bottom: 30px;
+        
+    }
+    
+    .purpose-text p {
+        font-size: 1rem;
+    }
+
     .section-padding {
         padding: 7px 0;
     }
 
     /* About Text Styling */
     .about-text h2 {
-        font-size: 22px;
+        font-size: 2.5em;
         font-weight: 700;
         color: #333;
         /* Dark text for better contrast */
         line-height: 1.4;
         margin-bottom: 11px;
         text-align: left;
+        margin-top: 9%;
     }
 
     /* Subheading for the About section */
@@ -1329,6 +1439,46 @@ button[type="submit"]:hover {
         /* Make the image responsive */
         max-width: 400px;
         /* Even smaller on mobile screens */
+    }
+
+    .goals h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    /* Stack columns vertically for smaller screens */
+    .goals .row {
+        flex-direction: column;
+    }
+
+    .goals .col-md-6 {
+        margin-bottom: 30px;
+    }
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .goals .about-text h2 {
+        font-family: 'Georgia', serif;
+        font-size: 26px;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 20px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    /* Align the list items better on small screens */
+    .purpose-text li {
+        font-size: 15px;
+        margin-left: 20px;
+    }
+
+    .purpose-text p {
+        font-size: 17px;
+        margin-left: 20px;
     }
 
     .team-card {
@@ -1573,139 +1723,29 @@ button[type="submit"]:hover {
 
     }
 
-    .services .row {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .services .col-lg-4 {
-        width: 100%;
-        /* Make cards 100% width on mobile */
-    }
-
-    .services .card {
-        margin: 0 auto;
-        /* Center the card on mobile */
-        width: 90%;
-        /* Slightly reduce width for smaller cards */
-    }
-
-    .services .section-header h2 {
-        font-size: 20px;
-    }
-
-    .services .section-header p {
-        font-size: 16px;
-    }
-
-    .services .card-body {
-        padding: 40px;
-    }
-
-    .services .card .card-title {
-        font-size: 23px;
-        margin-bottom: 5px;
-        /* Closer to the description */
-    }
-
-    .services .card .lead {
-        font-size: 14px;
-        margin-top: 18px;
-        /* Bring the text closer to the title */
-    }
-
-    .services .btn {
-        width: 56%;
-        font-size: 14px;
-        /* Adjust font size for smaller screens */
-        padding: 8px 20px;
-
-        background-color: #fbb034;
-        border: none;
+    purpose .about-text h2 {
+        font-family: var(--secondary-font);
+        font-size: 26px;
+        font-size: 1.5rem;
+        font-weight: 700;
         color: #333;
-        font-size: 16px;
-        font-weight: 600;
-        padding: 12px 25px;
-        border-radius: 25px;
-        transition: all 0.3s ease;
-    }
-
-    .dropdown-menu {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .dropdown-item {
-        display: block;
-        width: 100%;
-        /* Ensures the items span the full width */
-        padding: 10px 20px;
-        /* Adjust padding if necessary */
-    }
-
-    .project-gallery .col-md-4 {
-        width: 100%;
-        /* Images stack vertically on smaller mobile screens */
-    }
-
-    .portfolio .col-md-4 {
-        width: 100%;
-        /* Stack images vertically for smaller screens */
         margin-bottom: 20px;
-        /* Space between rows */
+        text-align: center;
+        margin-top: 55px;
     }
 
-    .portfolio .section-header h2 {
+   
+    .purpose-text p {
+        font-size: 13px;
+        margin-left: 20px;
+    }
+
+    .goals h2 {
+        font-family: var(--secondary-font);
         font-size: 24px;
-        font-weight: 600;
-        color: #333;
         margin-bottom: 15px;
-        text-transform: uppercase;
     }
-
-    .team-card {
-        width: 100%; /* Cards take full width */
-    }
-
-    .team-card {
-        width: 100%; /* Make the card take up full width on small screens */
-        margin-bottom: 20px; /* Reduce bottom margin */
-    }
-
-    .team-title {
-        font-size: 18px; /* Further reduce title font size */
-    }
-
-    .team-role {
-        font-size: 12px; /* Further reduce role font size */
-    }
-
-    .team-header h2 {
-        font-size: 24px;
-    }
-
-
-    .footer h5 {
-        font-size: 16px;
-    }
-
-    .footer p {
-        font-size: 12px;
-    }
-
-    .footer .bi {
-        font-size: 16px;
-    }
-
-    .footer .text-center {
-        font-size: 30px;
-    }
-
-
 }
-
-
 
 /* caption responsiveness for 425px and smaller screens */
 @media screen and (max-width: 425px) {
@@ -1747,12 +1787,13 @@ button[type="submit"]:hover {
     }
 
     .about-text h2 {
-        font-size: 18px;
+        font-size: 1.5em;
         font-weight: 700;
         color: #333;
         line-height: 1.4;
         margin-bottom: 11px;
         text-align: left;
+        margin-top: 31%;
     }
 
     .about-text p {
@@ -1799,6 +1840,44 @@ button[type="submit"]:hover {
         padding: 12px 25px;
         border-radius: 25px;
         transition: all 0.3s ease;
+    }
+
+    .purpose .about-text h2 {
+        font-family: var(--secondary-font);
+        font-size: 26px;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 20px;
+        text-align: center;
+        margin-top: 55px;
+    }
+
+    .goals .about-text h2 {
+        font-family: 'Georgia', serif;
+        font-size: 26px;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 20px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .goals ul li {
+        margin-bottom: 15px;
+        line-height: 1.8;
+        font-size: 10px;
+    }
+
+    .goals .about-text {
+        font-family: 'Georgia', serif;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #333;
+        text-align: center;
+        margin-bottom: 12px;
+        font-size: 26px;
     }
 
 }
