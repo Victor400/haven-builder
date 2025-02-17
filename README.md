@@ -17,7 +17,7 @@ Table of Contents
 10. [Project Setup](#project-setup)
 11. [Installation](#installation)
 12. [Testing](#testing)
-12. [Contributing](#contributing)
+12. [Acknowledgements](#acknowledgements)
 
 
 
@@ -428,3 +428,22 @@ This project includes automated tests that focus on improving the quality and pe
 ![Team Html Validations](assets/images/documentation/team-html-validator.png)
 **Contact Us Validator Testing** 
 ![Contact us Html Validations ](assets/images/documentation/contact-us-html-validator.png)
+
+
+
+# Acknowledgements
+
+I would like to express my heartfelt gratitude to the following individuals and resources who have contributed to my success in this project:
+
+### **Code Institute**
+I am immensely grateful to **Code Institute** for providing the foundational knowledge and skills that have enabled me to build this project. Their structured curriculum and hands-on learning experience have been instrumental in shaping my development journey.
+
+### **Divinector Web**
+A special thanks to **[Divinector Web](https://www.divinectorweb.com/)** for their informative tutorials and guidance, which helped me improve my web development skills and use Bootstrap efficiently for responsive design.
+
+### **My Family & Wife**
+I owe a huge debt of gratitude to my **family**, especially my **wife**, for their unwavering support, patience, and encouragement throughout the entire development process. Their love and understanding allowed me to dedicate the time and energy required to complete this project.
+
+### **ChatGPT**
+I would also like to thank **ChatGPT** for providing valuable insights, code suggestions, and solving technical problems that arose during the development process. It has been a reliable assistant in improving the efficiency and quality of my work.
+
