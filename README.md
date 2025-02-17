@@ -365,3 +365,50 @@ Start by cloning the repository to your local machine using Git:
 | **Subscribe for Updates**           | TC_018             | Subscription Form Visibility  | 1. Open the homepage.<br>2. Verify that the subscription form is available on each of the pages (Home, About Us, Services, Portfolio, Team, Contact Us).                          | The subscription form is visible on the homepage and footer.       | **Pass:** Form is visible.                        |
 | **Subscribe for Updates**           | TC_019             | Form Submission              | 1. Enter client details (Name, Email, Message) in the subscription form.<br>2. Click the subscribe button.                 | A confirmation message appears after submitting the form.          | **Pass:** Confirmation message is shown.      |
 | **Subscribe for Updates**           | TC_020             | Email Confirmation           | 1. Subscribe with a valid email address.<br>2. Verify if a welcome email is received.                | User should receive an welcome email with information about the company.   | <br>**Fail:** No welcome email. (Fail at the moment, there is no email integratio functionality yet)     |
+
+
+**Automated Testing**
+
+Automated Test Categories
+This project includes automated tests that focus on improving the quality and performance of the website. The tests are divided into four main categories:
+
+1. Performance Tests
+ "This section showcases the results of the performance tests that evaluate how quickly the website loads and how efficiently it performs under various conditions."
+**Image Description:** "Performance testing results chart showing load times, performance score, and areas for improvement."
+2. Accessibility Tests
+ "The accessibility tests ensure that the website is usable by everyone, including individuals with disabilities. This section highlights the website's accessibility score and key improvements."
+**Image Description:** "Accessibility test results displaying contrast ratios, alternative text, and keyboard navigability checks."
+ "Best practices tests ensure that the website follows modern web standards for security, code quality, and maintainability. This section showcases adherence to best practices."
+**Image Description:** "Results of the best practices test, including code quality scores, security vulnerabilities, and compliance with recommended standards."
+4. SEO Tests
+ "SEO (Search Engine Optimization) tests evaluate how well the website is optimized for search engines. This section highlights SEO improvements to increase visibility on search engines."
+**Image Description:** "SEO audit report showing key optimizations, such as meta tags, page titles, keyword usage, and mobile-friendliness."
+
+**Desktop**
+**Homepage Validator Testing** 
+![Homepage Desktop ](assets/images/documentation/automated-test-homepage.png)
+**About Us Validator Testing** 
+![About Us Desktop ](assets/images/documentation/automated-test-about-us.png)
+**Services Validator Testing** 
+![Services Desktop ](assets/images/documentation/automated-test-services.png)
+**Portfolio Validator Testing** 
+![Portfolio Desktop ](assets/images/documentation/automated-test-portfolio.png)
+**Team Validator Testing** 
+![Team Desktop ](assets/images/documentation/automated-test-team.png)
+**Contact Us Validator Testing** 
+![Homepage Desktop ](assets/images/documentation/automated-contact-us.png)
+
+
+**Tablet Devices**
+**Homepage Validator Testing** 
+![Homepage Desktop ](assets/images/documentation/automated-tablet-homepage.png)
+**About Us Validator Testing** 
+![About Us Desktop ](assets/images/documentation/automated-tablet-about-us.png)
+**Services Validator Testing** 
+![Services Desktop ](assets/images/documentation/automated-tablet-services.png)
+**Portfolio Validator Testing** 
+![Portfolio Desktop ](assets/images/documentation/automated-tablet-portfolio.png)
+**Team Validator Testing** 
+![Team Desktop ](assets/images/documentation/automated-tablet-team.png)
+**Contact Us Validator Testing** 
+![Homepage Desktop ](assets/images/documentation/automated-tablet-contact-us.png)
