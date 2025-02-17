@@ -7,17 +7,18 @@ Welcome to Haven Builders, your trusted partner in creating dream homes. We spec
 Table of Contents
 1. [Overview](#overview)
 2. [Key Features](#key-features)
-2. [Purpose](#purpose)
-3. [Goal](#goal)
-4. [Rationale](#rationale)
-3. [User Experience (UX Design)](#user-experience-ux-design)
-4. [Pages](#pages)
-5. [Technologies Used](#technologies-used)
-9. [Project Setup](#project-setup)
-10. [Installation](#installation)
-11. [Testing](#testing)
+3. [Purpose](#purpose)
+4. [Goal](#goal)
+5. [Rationale](#rationale)
+6. [User Experience (UX Design)](#user-experience-ux-design)
+7. [Pages](#pages)
+8. [Balsamiq-Wireframe](#balsamiq-wireframe)
+9. [Technologies Used](#technologies-used)
+10. [Project Setup](#project-setup)
+11. [Installation](#installation)
+12. [Testing](#testing)
 12. [Contributing](#contributing)
-13. [License](#license)
+
 
 
 ## Overview
@@ -293,6 +294,17 @@ Acceptance Criteria:
 "You're viewing the mobile version."
 ![Landing Page](documentation/phone1.png)
 ![About Us](documentation/phone2.png)
+
+
+### Balsamiq Wireframe
+You can view the Balsamiq wireframe 
+[Home](documentation/Haven-Builder-Desktop/Home.png).
+[About Us](documentation/Haven-Builder-Desktop/About.png).
+[Services](documentation/Haven-Builder-Desktop/Services.png).
+[Portfolio](documentation/Haven-Builder-Desktop/Portfolio.png).
+[Team](documentation/Haven-Builder-Desktop/Team.png).
+[Contact Us](documentation/Haven-Builder-Desktop/Contact%20Us.png).
+
 ---
 ## Technologies Used
 
