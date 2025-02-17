@@ -412,3 +412,19 @@ This project includes automated tests that focus on improving the quality and pe
 ![Team Desktop ](assets/images/documentation/automated-tablet-team.png)
 **Contact Us Validator Testing** 
 ![Homepage Desktop ](assets/images/documentation/automated-tablet-contact-us.png)
+
+
+
+**Html Validations across the pages**
+**Homepage Validator Testing** 
+![Homepage Html Validations](assets/images/documentation/homepage-html-validator.png)
+**About Us Validator Testing** 
+![About Us Html Validations ](assets/images/documentation//about-us-html-validator.png)
+**Services Validator Testing** 
+![Services Html Validations ](assets/images/documentation/services-html-validator.png)
+**Portfolio Validator Testing** 
+![Portfolio Html Validations ](assets/images/documentation/automated-tablet-portfolio.png)
+**Team Validator Testing** 
+![Team Html Validations](assets/images/documentation/team-html-validator.png)
+**Contact Us Validator Testing** 
+![Contact us Html Validations ](assets/images/documentation/contact-us-html-validator.png)
