@@ -182,18 +182,7 @@ The user expects the subscription process to be simple and fast. The form should
 
 ### User Stories
 
-
-**User Story 1**: Navigation Menu
-As a user,
-I want to easily navigate through the website using a menu bar,
-So that I can quickly access pages like Home, About, Services, Portfolio, Team, and Contact Us.
-
-Acceptance Criteria:
-A menu bar is displayed on the homepage with links to Home, About, Services, Portfolio, Team, and Contact Us.
-The menu bar is responsive and accessible on all devices.
-Clicking any of the menu items takes the user to the corresponding page.
-
-**User Story 2**: Request a Free Consultation
+**User Story 9**: Request a Free Consultation
 As a potential homebuyer, I want to request a free consultation,So that I can discuss my home-building requirements with a professional.
 Acceptance Criteria:
 1. A **Request a Free Consultation** button is displayed prominently on the homepage.
@@ -201,17 +190,8 @@ Acceptance Criteria:
 3. After submitting the form, a confirmation message is displayed.
 4. The user receives an email confirming their consultation request and outlining next steps.
 
-**User Story 3**: Carousel Display of Completed Projects
-As a user,
-I want to see a carousel showcasing completed projects,
-So that I can get an overview of the company’s work and quality.
 
-Acceptance Criteria:
-A carousel is displayed on the homepage showing completed projects.
-Each project in the carousel has a caption describing the project.
-The carousel moves automatically but can be manually controlled by the user.
-
-**User Story 3**: View Completed Projects
+**User Story 10**: View Completed Projects
 As a website visitor,I want to browse a portfolio of completed projects, So that I can see examples of the company’s work and assess quality.
 Acceptance Criteria:
 1. A **View Our Projects** section is available on the homepage and in the navigation menu.
@@ -220,45 +200,7 @@ Acceptance Criteria:
 4. Clicking on a project opens a detailed view with additional photos and specifications.
 
 
-**User Story 4**: Introduction Section with "Learn More" Button
-As a user,
-I want to read an introduction about the company on the homepage,
-So that I can learn more about the company’s values and what they offer.
-
-Acceptance Criteria:
-An introduction section is displayed on the homepage, containing text that introduces the company.
-A "Learn More" button is displayed in this section.
-Clicking the "Learn More" button redirects the user to the About Us page.
-The section includes an image representing the company or its work.
-
-**User Story 3**: Get a Quote
-As a prospective client, I want to request a personalized quote,So that I can understand the cost of building my home.
-Acceptance Criteria:
-1. A **Get a Quote** button is accessible on the homepage.
-2. Clicking the button opens a form with fields for project type, location, size, and budget.
-3. Users must fill in all required fields to submit the form.
-4. Upon submission, users see a confirmation message and receive an email summarising their request.
-
-
-
-
-**User Story 4:** Explore Sustainable Options
-As an eco-conscious buyer,I want to explore sustainable building materials and practices,So that I can build an environmentally friendly home.
-Acceptance Criteria:
-1. A **Sustainability** section is included in the main navigation menu.
-2. The section provides information on eco-friendly materials, energy-efficient designs, and certifications.
-3. Users can view examples of sustainable homes built by the company.
-4. A CTA prompts users to contact the company for eco-friendly building consultations.
-
-**User Story 5**: Contact the Company
-As a user,I want an easy way to contact the company,So that I can get my questions answered quickly.
-Acceptance Criteria:
-1. A **Contact Us** link is visible in the website header, footer, and main navigation menu.
-2. The contact page includes a form, phone number, email address, and business hours.
-3. Users can fill out the form with their name, email, and message.
-4. A confirmation message is displayed after submitting the form, and users receive an acknowledgment email.
-
-**User Story 6:** Subscribe for Updates
+**User Story 11:** Subscribe for Updates
 As a visitor,I want to subscribe to the company’s newsletter,So that I can receive updates about new projects, promotions, and home-building tips.
 Acceptance Criteria:
 1. A subscription form is available on the homepage and footer of the website.
@@ -266,7 +208,7 @@ Acceptance Criteria:
 3. Users see a confirmation message after subscribing.
 4. Subscribers receive a welcome email with information about the company and a link to unsubscribe if needed.
 
-**User Story 7**: Access Testimonials and Reviews
+**User Story 12**: Access Testimonials and Reviews
 As a potential client,I want to read testimonials and reviews from previous customers,So that I can feel confident about choosing the company.
 
 Acceptance Criteria:
@@ -300,12 +242,15 @@ Acceptance Criteria:
 
 ### Balsamiq Wireframe
 You can view the Balsamiq wireframe 
-[Home](documentation/Haven-Builder-Desktop/Home.png).
+[Home](assets/images/documentation/Haven-Builder-Desktop/Home.png).
 [About Us](assets/images/documentation/Haven-Builder-Desktop/About.png).
 [Services](assets/images/documentation/Haven-Builder-Desktop/Services.png).
 [Portfolio](assets/images/documentation/Haven-Builder-Desktop/Portfolio.png).
 [Team](assets/images/documentation/Haven-Builder-Desktop/Team.png).
 [Contact Us](assets/images/documentation/Haven-Builder-Desktop/Contact%20Us.png).
+
+
+[Figma Wireframe](https://www.figma.com/deck/ipwsIGxPLhNRmk8OtwQOtx/Untitled?node-id=1-44&t=xY7DiDXXuLof86HM-1)
 
 ---
 ## Technologies Used
