@@ -25,6 +25,9 @@ Table of Contents
 
 This project is a comprehensive web platform designed to streamline the process of building homes. Whether you’re a client looking to construct your dream house, an architect designing innovative structures, or a contractor managing projects, BuildEase provides the tools and features to make the process collaborative, efficient, and transparent
 
+# Project Link
+
+You can view the live project here: [Haven Builder](https://victor400.github.io/haven-builder/)
 
 ![Website Morkup](assets/images/all-devices.png)
 
@@ -278,32 +281,31 @@ Acceptance Criteria:
 
 1. Desktop Version (Screens 1025px and above)
 "You're viewing the desktop version."
-![Landing Page](documentation/desktop-home.png)
-![About Us](documentation/about-us-desktop.png)
-![Services](documentation/services-desktop.png)
-![Portfolio](documentation/portfolio-desktop.png)
-![Team](documentation/team-desktop.png)
-![Contact Us](documentation/contact-us-desktop.png)
+![Landing Page](assets/images/documentation/desktop-home.png)
+![About Us](assets/images/services-desktop.png)
+![Portfolio](assets/images/portfolio-desktop.png)
+![Team](assets/images/documentation/team-desktop.png)
+![Contact Us](assets/images/documentation/contact-us-desktop.png)
 
 2. Tablet Version (Screens between 768px and 1024px)
 "You're viewing the tablet version."
-![Landing Page](documentation/tablet1.png)
-![About Us](documentation/tablet2.png)
+![Landing Page](assets/images/documentation/tablet1.png)
+![About Us](assets/images/documentation/tablet2.png)
 
 3. Mobile Version (Screens 767px and below)
 "You're viewing the mobile version."
-![Landing Page](documentation/phone1.png)
-![About Us](documentation/phone2.png)
+![Landing Page](assets/images/documentation/phone1.png)
+![About Us](assets/images/documentation/phone2.png)
 
 
 ### Balsamiq Wireframe
 You can view the Balsamiq wireframe 
 [Home](documentation/Haven-Builder-Desktop/Home.png).
-[About Us](documentation/Haven-Builder-Desktop/About.png).
-[Services](documentation/Haven-Builder-Desktop/Services.png).
-[Portfolio](documentation/Haven-Builder-Desktop/Portfolio.png).
-[Team](documentation/Haven-Builder-Desktop/Team.png).
-[Contact Us](documentation/Haven-Builder-Desktop/Contact%20Us.png).
+[About Us](assets/images/documentation/Haven-Builder-Desktop/About.png).
+[Services](assets/images/documentation/Haven-Builder-Desktop/Services.png).
+[Portfolio](assets/images/documentation/Haven-Builder-Desktop/Portfolio.png).
+[Team](assets/images/documentation/Haven-Builder-Desktop/Team.png).
+[Contact Us](assets/images/documentation/Haven-Builder-Desktop/Contact%20Us.png).
 
 ---
 ## Technologies Used
